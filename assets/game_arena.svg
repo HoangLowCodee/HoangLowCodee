@@ -1,0 +1,417 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="300" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+
+      /* Font styles */
+      .arcade-title { font-family: 'Press Start 2P', monospace; font-size: 11px; fill: #ffe600; }
+      .arcade-hud   { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #00ffcc; letter-spacing: 0.5px; }
+      .arcade-score { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #ffffff; }
+      .arcade-text  { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #f8fafc; }
+      .arcade-log   { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #ff007f; }
+
+      /* ==================== GAME ANIMATION TIMELINE (6s LOOP) ==================== */
+
+      /* 1. Scrolling Ground and Background Grid */
+      @keyframes scrollGround {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-40px); }
+      }
+      .anim-ground { animation: scrollGround 0.8s linear infinite; }
+
+      /* 2. Hero Motion: Run -> Attack Thrust -> Celebrate */
+      @keyframes heroAction {
+        0%, 15% { transform: translate(70px, 140px); }
+        22% { transform: translate(110px, 138px); } /* Thrust forward to attack */
+        28%, 35% { transform: translate(100px, 140px); }
+        45%, 85% { transform: translate(85px, 136px); } /* Celebrate / Victory bob */
+        95%, 100% { transform: translate(70px, 140px); }
+      }
+      .anim-hero { animation: heroAction 6s ease-in-out infinite; }
+
+      /* Hero Staff Spell Aura */
+      @keyframes staffCharge {
+        0%, 15% { opacity: 0.2; transform: scale(0.8); }
+        20%, 25% { opacity: 1; transform: scale(1.4); }
+        30%, 100% { opacity: 0; transform: scale(0.5); }
+      }
+      .anim-aura { animation: staffCharge 6s ease-out infinite; transform-origin: 145px 150px; }
+
+      /* 3. Magic Missile / Cyber Beam Shot */
+      @keyframes beamShot {
+        0%, 20% { opacity: 0; transform: translateX(0) scaleX(0.2); }
+        21% { opacity: 1; transform: translateX(0) scaleX(1); }
+        26% { opacity: 1; transform: translateX(450px) scaleX(1.8); }
+        28%, 100% { opacity: 0; transform: translateX(500px) scaleX(0.1); }
+      }
+      .anim-beam { animation: beamShot 6s linear infinite; }
+
+      /* 4. Impact Burst Particles */
+      @keyframes impactExplode {
+        0%, 25% { opacity: 0; transform: scale(0); }
+        27% { opacity: 1; transform: scale(1.6); }
+        33% { opacity: 0.9; transform: scale(2.2); }
+        38%, 100% { opacity: 0; transform: scale(0.2); }
+      }
+      .anim-burst { animation: impactExplode 6s ease-out infinite; transform-origin: 660px 175px; }
+
+      /* 5. Monster Boss Behavior: Float -> Hit Shake -> Melt/Die -> Respawn */
+      @keyframes bossCycle {
+        0%, 20% {
+          transform: translate(620px, 140px);
+          opacity: 1;
+          filter: drop-shadow(0 0 0px transparent);
+        }
+        21%, 23% { transform: translate(625px, 138px); }
+        24%, 26% { transform: translate(615px, 142px); }
+        27%, 29% { transform: translate(630px, 136px); } /* Hit reaction shake */
+        30%, 35% { transform: translate(620px, 140px); }
+        40% { transform: translate(620px, 160px) scale(0.8, 0.4); opacity: 0.6; } /* Splat / Melt */
+        46%, 88% { transform: translate(620px, 200px) scale(0); opacity: 0; } /* Defeated */
+        92% { transform: translate(620px, 110px) scale(0.5); opacity: 0.3; } /* Respawn drops from above */
+        98%, 100% { transform: translate(620px, 140px) scale(1); opacity: 1; }
+      }
+      .anim-boss { animation: bossCycle 6s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+
+      /* Boss Hit Flash Overlay */
+      @keyframes hitFlash {
+        0%, 25% { opacity: 0; }
+        26%, 28% { opacity: 0.9; fill: #ffffff; }
+        29%, 31% { opacity: 0.7; fill: #ff0055; }
+        34%, 100% { opacity: 0; }
+      }
+      .anim-hit { animation: hitFlash 6s ease-in-out infinite; }
+
+      /* 6. Boss HP Bar Depletion */
+      @keyframes bossHpLoss {
+        0%, 25% { width: 140px; fill: #ff0055; }
+        29% { width: 45px; fill: #ffe600; }
+        40%, 88% { width: 0px; fill: #ff0055; }
+        96%, 100% { width: 140px; fill: #ff0055; }
+      }
+      .anim-boss-hp { animation: bossHpLoss 6s steps(12, end) infinite; }
+
+      /* 7. Damage Text Float Up */
+      @keyframes floatDamage {
+        0%, 26% { opacity: 0; transform: translate(620px, 140px) scale(0.5); }
+        28% { opacity: 1; transform: translate(620px, 115px) scale(1.2); }
+        34% { opacity: 1; transform: translate(620px, 100px) scale(1); }
+        42%, 100% { opacity: 0; transform: translate(620px, 85px) scale(0.8); }
+      }
+      .anim-dmg { animation: floatDamage 6s ease-out infinite; }
+
+      /* 8. Gold Coin / EXP Reward Float */
+      @keyframes rewardBounce {
+        0%, 38% { opacity: 0; transform: translate(650px, 160px) scale(0); }
+        44% { opacity: 1; transform: translate(650px, 110px) scale(1.3); }
+        52% { opacity: 1; transform: translate(650px, 125px) scale(1); }
+        68% { opacity: 1; transform: translate(650px, 110px) scale(1); }
+        76%, 100% { opacity: 0; transform: translate(650px, 95px) scale(0.8); }
+      }
+      .anim-reward { animation: rewardBounce 6s ease-in-out infinite; }
+
+      /* 9. Dynamic Battle Log Subtitles */
+      @keyframes logLine1 {
+        0%, 22% { opacity: 1; }
+        23%, 100% { opacity: 0; }
+      }
+      @keyframes logLine2 {
+        0%, 22% { opacity: 0; }
+        23%, 45% { opacity: 1; }
+        46%, 100% { opacity: 0; }
+      }
+      @keyframes logLine3 {
+        0%, 45% { opacity: 0; }
+        46%, 88% { opacity: 1; }
+        89%, 100% { opacity: 0; }
+      }
+      @keyframes logLine4 {
+        0%, 88% { opacity: 0; }
+        89%, 100% { opacity: 1; }
+      }
+      .log-1 { animation: logLine1 6s step-end infinite; }
+      .log-2 { animation: logLine2 6s step-end infinite; }
+      .log-3 { animation: logLine3 6s step-end infinite; }
+      .log-4 { animation: logLine4 6s step-end infinite; }
+
+      /* Blinking Elements */
+      @keyframes blinker {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .blink { animation: blinker 0.6s step-end infinite; }
+
+      /* Star Twinkle */
+      @keyframes starBlink {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      .star-1 { animation: starBlink 1.4s infinite ease-in-out; }
+      .star-2 { animation: starBlink 2.1s infinite ease-in-out 0.5s; }
+      .star-3 { animation: starBlink 1.8s infinite ease-in-out 1.1s; }
+    </style>
+
+    <!-- CRT Scanline Filter -->
+    <pattern id="arcadeScan" width="100%" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100%" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.35" />
+    </pattern>
+
+    <!-- Star Grid Pattern -->
+    <pattern id="skyDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="#2d134b" />
+    </pattern>
+
+    <!-- Floor Block Pattern -->
+    <pattern id="pixelFloor" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="40" height="40" fill="#150a2e" stroke="#2a105c" stroke-width="1" />
+      <rect x="4" y="4" width="32" height="2" fill="#3b1780" />
+      <rect x="18" y="14" width="4" height="4" fill="#00ffcc" opacity="0.15" />
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#2a105c" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- ==================== ARCADE SCREEN BACKGROUND ==================== -->
+  <rect x="2" y="2" width="896" height="296" fill="#070312" stroke="#00ffcc" stroke-width="2" />
+  <rect x="6" y="6" width="888" height="288" fill="#0b051b" />
+  <rect x="6" y="6" width="888" height="288" fill="url(#skyDots)" />
+
+  <!-- Pixel Dystopian Sky / Dungeon Backing -->
+  <g fill="#160833">
+    <rect x="40" y="70" width="70" height="110" />
+    <rect x="110" y="90" width="90" height="90" />
+    <rect x="240" y="60" width="60" height="120" />
+    <rect x="340" y="85" width="110" height="95" />
+    <rect x="520" y="75" width="80" height="105" />
+    <rect x="670" y="65" width="90" height="115" />
+    <rect x="760" y="90" width="100" height="90" />
+  </g>
+
+  <!-- Twinkling Cyber Stars -->
+  <g fill="#00ffff">
+    <rect class="star-1" x="80" y="45" width="4" height="4" fill="#00ffcc" />
+    <rect class="star-2" x="220" y="38" width="6" height="6" fill="#ffe600" />
+    <rect class="star-3" x="380" y="55" width="4" height="4" fill="#ff007f" />
+    <rect class="star-1" x="510" y="40" width="6" height="6" fill="#00ffcc" />
+    <rect class="star-2" x="710" y="50" width="4" height="4" fill="#ffe600" />
+    <rect class="star-3" x="830" y="42" width="5" height="5" fill="#ffffff" />
+  </g>
+
+  <!-- Parallax Scrolling Dungeon Floor -->
+  <g transform="translate(0, 215)">
+    <!-- Floor Border Neon Line -->
+    <line x1="6" y1="0" x2="894" y2="0" stroke="#00ffcc" stroke-width="3" />
+    <line x1="6" y1="4" x2="894" y2="4" stroke="#ff007f" stroke-width="1.5" />
+    
+    <!-- Moving ground tiles -->
+    <g class="anim-ground">
+      <rect x="-40" y="6" width="980" height="73" fill="url(#pixelFloor)" />
+    </g>
+  </g>
+
+  <!-- ==================== ARCADE TOP HUD BAR ==================== -->
+  <rect x="6" y="6" width="888" height="30" fill="#180736" stroke="#ff007f" stroke-width="1" />
+  
+  <text class="arcade-hud" x="20" y="25">● 1UP [HOANG]</text>
+  <text class="arcade-score" x="145" y="25">099420</text>
+
+  <text class="arcade-hud" x="250" y="25" fill="#ffe600">HIGH SCORE</text>
+  <text class="arcade-score" x="365" y="25">999999</text>
+
+  <text class="arcade-hud" x="480" y="25" fill="#a855f7">STAGE 04: PROD SERVER</text>
+
+  <!-- Flashing Coin Prompt -->
+  <g transform="translate(730, 14)">
+    <rect x="0" y="0" width="150" height="16" fill="#000000" stroke="#00ffcc" stroke-width="1" />
+    <text class="arcade-hud blink" x="12" y="12" fill="#00ffcc">AUTO-BATTLE ON</text>
+  </g>
+
+  <!-- ==================== HEALTH BARS (PLAYER vs BOSS) ==================== -->
+  <!-- Left: Hero Player Card -->
+  <g transform="translate(30, 48)">
+    <rect x="0" y="0" width="230" height="32" fill="#000000" stroke="#00ffcc" stroke-width="1" />
+    <text class="arcade-hud" x="10" y="14" fill="#00ffcc">PLAYER: HOANG.SORCERER</text>
+    <!-- HP Gauge -->
+    <text class="arcade-hud" x="10" y="26" font-size="7" fill="#94a3b8">HP</text>
+    <rect x="35" y="19" width="140" height="8" fill="#1e1035" stroke="#334155" stroke-width="1" />
+    <rect x="36" y="20" width="138" height="6" fill="#00ffcc" />
+    <text class="arcade-score" x="182" y="26" font-size="8" fill="#00ffcc">9999</text>
+  </g>
+
+  <!-- Right: Boss Monster Card -->
+  <g transform="translate(640, 48)">
+    <rect x="0" y="0" width="230" height="32" fill="#000000" stroke="#ff0055" stroke-width="1" />
+    <text class="arcade-hud" x="10" y="14" fill="#ff0055">BOSS: NULL_POINTER_BUG</text>
+    <!-- Boss HP Gauge -->
+    <text class="arcade-hud" x="10" y="26" font-size="7" fill="#ff0055">HP</text>
+    <rect x="35" y="19" width="140" height="8" fill="#1e1035" stroke="#334155" stroke-width="1" />
+    <!-- Dynamic Depleting HP Bar -->
+    <rect class="anim-boss-hp" x="36" y="20" width="140" height="6" fill="#ff0055" />
+    <text class="arcade-score" x="182" y="26" font-size="8" fill="#ff0055">LV.88</text>
+  </g>
+
+  <!-- ==================== PIXEL HERO SPRITE (HOANGLOWCODING) ==================== -->
+  <g class="anim-hero">
+    <!-- Wizard Hat (Purple & Gold Brim) -->
+    <rect x="22" y="0" width="12" height="6" fill="#ffe600" />
+    <rect x="16" y="6" width="24" height="10" fill="#7928ca" />
+    <rect x="10" y="16" width="36" height="10" fill="#7928ca" />
+    <rect x="4" y="26" width="48" height="8" fill="#a855f7" />
+    <rect x="22" y="22" width="12" height="8" fill="#ffe600" /> <!-- Buckle -->
+
+    <!-- Head / Mask with Glowing Cyan Visor -->
+    <rect x="12" y="34" width="36" height="16" fill="#180736" />
+    <rect x="18" y="38" width="8" height="6" fill="#00ffcc" />
+    <rect x="32" y="38" width="8" height="6" fill="#00ffcc" />
+    <rect x="20" y="40" width="4" height="2" fill="#ffffff" />
+    <rect x="34" y="40" width="4" height="2" fill="#ffffff" />
+
+    <!-- Robe / Mage Armour -->
+    <rect x="10" y="50" width="40" height="26" fill="#6b21a8" />
+    <rect x="16" y="50" width="28" height="26" fill="#7e22ce" />
+    <rect x="26" y="50" width="8" height="26" fill="#ffe600" />
+
+    <!-- Feet / Boots -->
+    <rect x="12" y="76" width="12" height="6" fill="#180736" />
+    <rect x="34" y="76" width="12" height="6" fill="#180736" />
+
+    <!-- Magic Staff with Glowing Crystal -->
+    <rect x="52" y="16" width="6" height="64" fill="#78350f" />
+    <!-- Crystal Top -->
+    <rect x="49" y="8" width="12" height="12" fill="#00ffcc" />
+    <rect x="52" y="5" width="6" height="18" fill="#ffffff" />
+    <rect x="46" y="11" width="18" height="6" fill="#00ffcc" />
+
+    <!-- Staff Energy Aura Burst -->
+    <circle class="anim-aura" cx="55" cy="14" r="14" fill="#00ffcc" opacity="0.4" />
+  </g>
+
+  <!-- ==================== SPELL ATTACK: CYBER BEAM / CODE MISSILE ==================== -->
+  <g class="anim-beam" transform="translate(180, 168)">
+    <!-- Magic Arrow / Cyber Bolt -->
+    <rect x="0" y="0" width="45" height="6" fill="#00ffcc" />
+    <rect x="10" y="-3" width="35" height="12" fill="#00ffcc" opacity="0.6" />
+    <rect x="25" y="-1" width="25" height="8" fill="#ffffff" />
+    <!-- Trailing Sparkles -->
+    <rect x="-15" y="1" width="10" height="4" fill="#ff007f" />
+    <rect x="-30" y="2" width="8" height="2" fill="#ffe600" />
+    <!-- Binary Code Rune on Beam -->
+    <text class="arcade-hud" x="5" y="-6" font-size="7" fill="#ffe600">&lt;/BUG_DESTROY&gt;</text>
+  </g>
+
+  <!-- ==================== PIXEL MONSTER BOSS: BUG.EXE ==================== -->
+  <g class="anim-boss">
+    <!-- Shadow beneath monster -->
+    <ellipse cx="36" cy="74" rx="36" ry="6" fill="#000000" opacity="0.6" />
+
+    <!-- Bug Body (Cyber Crab / Spider Glitch Daemon) -->
+    <!-- Antennae -->
+    <rect x="16" y="0" width="4" height="14" fill="#ff0055" />
+    <rect x="12" y="0" width="8" height="4" fill="#ffe600" />
+    <rect x="52" y="0" width="4" height="14" fill="#ff0055" />
+    <rect x="52" y="0" width="8" height="4" fill="#ffe600" />
+
+    <!-- Bug Head & Shell -->
+    <rect x="14" y="14" width="44" height="34" fill="#990033" />
+    <rect x="20" y="18" width="32" height="26" fill="#ff0055" />
+
+    <!-- Glowing Cyber Glitch Core -->
+    <rect x="28" y="26" width="16" height="12" fill="#090514" />
+    <text class="arcade-hud" x="30" y="36" font-size="8" fill="#00ffcc">404</text>
+
+    <!-- Angry Eyes -->
+    <polygon points="18,22 26,24 18,26" fill="#ffe600" />
+    <polygon points="54,22 46,24 54,26" fill="#ffe600" />
+
+    <!-- Robotic Legs -->
+    <!-- Left legs -->
+    <rect x="2" y="22" width="12" height="4" fill="#ff0055" />
+    <rect x="0" y="26" width="4" height="18" fill="#990033" />
+    <rect x="4" y="38" width="10" height="4" fill="#ff0055" />
+    <rect x="2" y="42" width="4" height="20" fill="#990033" />
+
+    <!-- Right legs -->
+    <rect x="58" y="22" width="12" height="4" fill="#ff0055" />
+    <rect x="68" y="26" width="4" height="18" fill="#990033" />
+    <rect x="58" y="38" width="10" height="4" fill="#ff0055" />
+    <rect x="66" y="42" width="4" height="20" fill="#990033" />
+
+    <!-- Bottom Pincers / Claws -->
+    <rect x="22" y="48" width="8" height="14" fill="#ff0055" />
+    <rect x="42" y="48" width="8" height="14" fill="#ff0055" />
+    <rect x="26" y="60" width="4" height="8" fill="#ffe600" />
+    <rect x="42" y="60" width="4" height="8" fill="#ffe600" />
+
+    <!-- White/Red Damage Flash Mask -->
+    <rect class="anim-hit" x="0" y="0" width="72" height="70" />
+  </g>
+
+  <!-- ==================== IMPACT BURST PARTICLES ==================== -->
+  <g class="anim-burst">
+    <!-- Starburst Pixels -->
+    <rect x="-4" y="-20" width="8" height="8" fill="#ffe600" />
+    <rect x="18" y="-14" width="8" height="8" fill="#ffffff" />
+    <rect x="22" y="6" width="8" height="8" fill="#00ffcc" />
+    <rect x="14" y="20" width="8" height="8" fill="#ff007f" />
+    <rect x="-8" y="24" width="8" height="8" fill="#ffe600" />
+    <rect x="-24" y="10" width="8" height="8" fill="#ffffff" />
+    <rect x="-26" y="-12" width="8" height="8" fill="#00ffcc" />
+    <rect x="-8" y="-4" width="16" height="16" fill="#ffffff" />
+  </g>
+
+  <!-- ==================== POPUP: DAMAGE & LOOT ==================== -->
+  <!-- Critical Damage Text -->
+  <g class="anim-dmg">
+    <rect x="-6" y="-16" width="160" height="22" fill="#000000" stroke="#ff0055" stroke-width="1.5" />
+    <text class="arcade-hud" x="6" y="0" font-size="10" fill="#ffe600">CRIT! 99,999</text>
+  </g>
+
+  <!-- Victory Drop: Coin & XP -->
+  <g class="anim-reward">
+    <!-- Bouncing Gold Coin -->
+    <g transform="translate(-40, -10)">
+      <circle cx="10" cy="10" r="10" fill="#ffe600" stroke="#b45309" stroke-width="1.5" />
+      <text class="arcade-hud" x="6" y="14" font-size="9" fill="#000000">$</text>
+    </g>
+    <!-- XP Badge -->
+    <rect x="-14" y="-3" width="130" height="22" fill="#000000" stroke="#00ffcc" stroke-width="1.5" />
+    <text class="arcade-hud" x="-2" y="12" font-size="9" fill="#00ffcc">+500 XP [PATCHED]</text>
+  </g>
+
+  <!-- ==================== ARCADE TERMINAL / BATTLE LOG ==================== -->
+  <g transform="translate(180, 245)">
+    <rect x="0" y="0" width="540" height="38" fill="#000000" stroke="#7928ca" stroke-width="2" />
+    
+    <!-- Step 1 Text -->
+    <g class="log-1">
+      <text class="arcade-hud" x="16" y="16" fill="#ff0055">&gt; ALERT: WILD [NULL_POINTER_BUG] DETECTED ON PORT 8080!</text>
+      <text class="arcade-text" x="16" y="30" fill="#94a3b8">&gt; SYSTEM STATUS: <tspan fill="#ffe600">PREPARING COUNTER-MEASURES...</tspan></text>
+    </g>
+
+    <!-- Step 2 Text -->
+    <g class="log-2">
+      <text class="arcade-hud" x="16" y="16" fill="#00ffcc">&gt; HOANG CASTS: [SPRING_SECURITY_OVERDRIVE]!</text>
+      <text class="arcade-text" x="16" y="30" fill="#ffe600">&gt; FIRING COMPILED BYTECODE BEAM...</text>
+    </g>
+
+    <!-- Step 3 Text -->
+    <g class="log-3">
+      <text class="arcade-hud" x="16" y="16" fill="#ffe600">&gt; BOOM! CRITICAL HIT! 99,999 SYSTEM DAMAGE!</text>
+      <text class="arcade-text" x="16" y="30" fill="#00ffcc">&gt; BUG PURGED! +500 XP • PRODUCTION STABILIZED! ✨</text>
+    </g>
+
+    <!-- Step 4 Text -->
+    <g class="log-4">
+      <text class="arcade-hud" x="16" y="16" fill="#a855f7">&gt; SCANNING NEXT SERVICE CONTAINER...</text>
+      <text class="arcade-text" x="16" y="30" fill="#94a3b8">&gt; INSERT COIN TO SPAWN NEXT WAVE <tspan class="blink" fill="#00ffcc">█</tspan></text>
+    </g>
+  </g>
+
+  <!-- Arcade Scanlines CRT Screen Overlay -->
+  <rect x="6" y="6" width="888" height="288" fill="url(#arcadeScan)" pointer-events="none" />
+
+  <!-- Outer Neon Bevel Frame -->
+  <rect x="0" y="0" width="900" height="4" fill="#00ffcc" />
+  <rect x="0" y="296" width="900" height="4" fill="#ff007f" />
+  <rect x="0" y="0" width="4" height="300" fill="#00ffcc" />
+  <rect x="896" y="0" width="4" height="300" fill="#ff007f" />
+</svg>

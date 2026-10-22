@@ -31,7 +31,12 @@
 
   <br/><br/>
 
-  <!-- ==================== 5. RETRO ARCADE BATTLE STATS ==================== -->
+  <!-- ==================== 5. LIVE PIXEL ARCADE BATTLE ==================== -->
+  <img src="./assets/game_arena.svg" width="100%" alt="Live Pixel Arcade Battle" />
+
+  <br/><br/>
+
+  <!-- ==================== 6. RETRO ARCADE BATTLE STATS ==================== -->
   <p align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=HoangLowCodee&show_icons=true&theme=synthwave&hide_border=false&border_color=00ffcc&bg_color=090514&title_color=00ffcc&icon_color=ff007f&text_color=cbd5e1" height="165" alt="Battle Stats" />
     &nbsp;&nbsp;
