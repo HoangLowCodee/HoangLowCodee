@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+
+      .pix-title { font-family: 'Press Start 2P', monospace; font-size: 13px; fill: #ffe600; }
+      .pix-head  { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #00ffcc; letter-spacing: 0.5px; }
+      .pix-label { font-family: 'Press Start 2P', monospace; font-size: 8px; fill: #94a3b8; }
+      .pix-val   { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #f8fafc; }
+      .pix-gold  { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #ffe600; }
+      .pix-green { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #00ffcc; }
+      .pix-pink  { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #ff007f; }
+
+      @keyframes pulseBorder {
+        0%, 100% { stroke: #00ffcc; }
+        50% { stroke: #ff007f; }
+      }
+      .pulse-box { animation: pulseBorder 3s infinite ease-in-out; }
+    </style>
+
+    <pattern id="dotPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#1e1035" />
+    </pattern>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="896" height="276" fill="#090514" stroke="#ff007f" stroke-width="2" />
+  <rect x="6" y="6" width="888" height="268" fill="#0c071d" />
+  <rect x="6" y="6" width="888" height="268" fill="url(#dotPattern)" />
+
+  <!-- Window Header Bar -->
+  <rect x="6" y="6" width="888" height="30" fill="#180736" stroke="#ff007f" stroke-width="1" />
+  <text class="pix-title" x="20" y="26">👾 [ CHARACTER PROFILE &amp; STATS ]</text>
+  
+  <!-- Arcade Window Buttons -->
+  <rect x="836" y="14" width="14" height="14" fill="#00ffcc" />
+  <rect x="856" y="14" width="14" height="14" fill="#ffe600" />
+  <rect x="876" y="14" width="14" height="14" fill="#ff0055" />
+
+  <!-- ==================== LEFT COLUMN: BASIC ATTRIBUTES ==================== -->
+  <g transform="translate(30, 56)">
+    <!-- Sub-header -->
+    <rect x="0" y="0" width="380" height="22" fill="#000000" stroke="#00ffcc" stroke-width="1" />
+    <text class="pix-head" x="12" y="16">► HERO BIO</text>
+
+    <!-- Stat Rows -->
+    <g transform="translate(0, 36)">
+      <text class="pix-label" x="0" y="12">PLAYER:</text>
+      <text class="pix-gold" x="90" y="12">Nguyễn Duy Hoàng (HoangLowCoding)</text>
+
+      <text class="pix-label" x="0" y="36">CLASS :</text>
+      <text class="pix-green" x="90" y="36">Backend Sorcerer // IAM Paladin</text>
+
+      <text class="pix-label" x="0" y="60">GUILD :</text>
+      <text class="pix-val" x="90" y="60">Vietnam Dev Realm [🇻🇳]</text>
+
+      <text class="pix-label" x="0" y="84">ENERGY:</text>
+      <text class="pix-pink" x="90" y="84">100% Coffee Overdrive ☕</text>
+
+      <text class="pix-label" x="0" y="108">SPECIAL:</text>
+      <text class="pix-val" x="90" y="108">Single Sign-On &amp; Auth Fortresses</text>
+    </g>
+
+    <!-- Dialog speech box -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="380" height="42" fill="#000000" stroke="#7928ca" stroke-width="1.5" />
+      <text class="pix-val" x="12" y="18">"Building unhackable gates &amp; scalable</text>
+      <text class="pix-green" x="12" y="34"> distributed realms with clean code."</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="440" y1="56" x2="440" y2="260" stroke="#1f113a" stroke-width="2" stroke-dasharray="6 4" />
+
+  <!-- ==================== RIGHT COLUMN: ATTRIBUTE MATRIX ==================== -->
+  <g transform="translate(470, 56)">
+    <rect x="0" y="0" width="395" height="22" fill="#000000" stroke="#ffe600" stroke-width="1" />
+    <text class="pix-head" x="12" y="16" fill="#ffe600">► RPG ATTRIBUTE SCORES</text>
+
+    <!-- Stat Bars with pixel blocks -->
+    <!-- STR -->
+    <g transform="translate(0, 36)">
+      <text class="pix-head" x="0" y="12" fill="#ff0055">STR</text>
+      <text class="pix-label" x="42" y="12">JAVA &amp; SPRING BOOT</text>
+      <rect x="210" y="2" width="140" height="12" fill="#000000" stroke="#334155" stroke-width="1" />
+      <rect x="212" y="4" width="132" height="8" fill="#ff0055" />
+      <text class="pix-title" x="360" y="13" font-size="9" fill="#ff0055">99</text>
+    </g>
+
+    <!-- INT -->
+    <g transform="translate(0, 64)">
+      <text class="pix-head" x="0" y="12" fill="#00ffcc">INT</text>
+      <text class="pix-label" x="42" y="12">IAM, KEYCLOAK, OAUTH2</text>
+      <rect x="210" y="2" width="140" height="12" fill="#000000" stroke="#334155" stroke-width="1" />
+      <rect x="212" y="4" width="136" height="8" fill="#00ffcc" />
+      <text class="pix-title" x="360" y="13" font-size="9" fill="#00ffcc">100</text>
+    </g>
+
+    <!-- AGI -->
+    <g transform="translate(0, 92)">
+      <text class="pix-head" x="0" y="12" fill="#ffe600">AGI</text>
+      <text class="pix-label" x="42" y="12">PYTHON &amp; FASTAPI</text>
+      <rect x="210" y="2" width="140" height="12" fill="#000000" stroke="#334155" stroke-width="1" />
+      <rect x="212" y="4" width="124" height="8" fill="#ffe600" />
+      <text class="pix-title" x="360" y="13" font-size="9" fill="#ffe600">92</text>
+    </g>
+
+    <!-- WIS -->
+    <g transform="translate(0, 120)">
+      <text class="pix-head" x="0" y="12" fill="#a855f7">WIS</text>
+      <text class="pix-label" x="42" y="12">COMPUTER VISION &amp; AI</text>
+      <rect x="210" y="2" width="140" height="12" fill="#000000" stroke="#334155" stroke-width="1" />
+      <rect x="212" y="4" width="118" height="8" fill="#a855f7" />
+      <text class="pix-title" x="360" y="13" font-size="9" fill="#a855f7">88</text>
+    </g>
+
+    <!-- DEF -->
+    <g transform="translate(0, 148)">
+      <text class="pix-head" x="0" y="12" fill="#38bdf8">DEF</text>
+      <text class="pix-label" x="42" y="12">DOCKER &amp; CI/CD</text>
+      <rect x="210" y="2" width="140" height="12" fill="#000000" stroke="#334155" stroke-width="1" />
+      <rect x="212" y="4" width="126" height="8" fill="#38bdf8" />
+      <text class="pix-title" x="360" y="13" font-size="9" fill="#38bdf8">94</text>
+    </g>
+
+    <!-- LUK -->
+    <g transform="translate(0, 176)">
+      <text class="pix-head" x="0" y="12" fill="#4ade80">LUK</text>
+      <text class="pix-label" x="42" y="12">NO BUGS IN PROD</text>
+      <rect x="210" y="2" width="140" height="12" fill="#000000" stroke="#334155" stroke-width="1" />
+      <rect x="212" y="4" width="138" height="8" fill="#4ade80" />
+      <text class="pix-title" x="360" y="13" font-size="9" fill="#4ade80">99</text>
+    </g>
+  </g>
+</svg>
+

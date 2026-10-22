@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+
+      .pix-title { font-family: 'Press Start 2P', monospace; font-size: 13px; fill: #00ffcc; }
+      .pix-head  { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #ffe600; }
+      .pix-tag   { font-family: 'Press Start 2P', monospace; font-size: 8px; fill: #000000; }
+      .pix-desc  { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #cbd5e1; }
+      .pix-bold  { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #f8fafc; font-weight: 700; }
+      .pix-sub   { font-family: 'Silkscreen', monospace; font-size: 11px; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="896" height="236" fill="#090514" stroke="#00ffcc" stroke-width="2" />
+  <rect x="6" y="6" width="888" height="228" fill="#0c071d" />
+
+  <!-- Top Title Bar -->
+  <rect x="6" y="6" width="888" height="30" fill="#180736" stroke="#00ffcc" stroke-width="1" />
+  <text class="pix-title" x="20" y="26">📜 [ ACTIVE QUEST BOARD &amp; MISSIONS ]</text>
+
+  <!-- 3 Quest Columns -->
+  <!-- ==================== QUEST 1 ==================== -->
+  <g transform="translate(24, 52)">
+    <rect x="0" y="0" width="265" height="166" fill="#000000" stroke="#ff0055" stroke-width="1.5" />
+    
+    <!-- Quest Badge -->
+    <rect x="12" y="12" width="90" height="18" fill="#ff0055" />
+    <text class="pix-tag" x="18" y="25" fill="#ffffff">MAIN QUEST</text>
+
+    <text class="pix-head" x="12" y="52" fill="#ff0055">KEYCLOAK &amp; SSO</text>
+    <text class="pix-desc" x="12" y="74">Enterprise Identity Defense</text>
+    <text class="pix-sub" x="12" y="94">• OAuth2 / OpenID Connect</text>
+    <text class="pix-sub" x="12" y="112">• Centralized User Access</text>
+    <text class="pix-sub" x="12" y="130">• Distributed Token Security</text>
+
+    <!-- Progress -->
+    <rect x="12" y="144" width="241" height="8" fill="#180736" />
+    <rect x="12" y="144" width="200" height="8" fill="#ff0055" />
+  </g>
+
+  <!-- ==================== QUEST 2 ==================== -->
+  <g transform="translate(317, 52)">
+    <rect x="0" y="0" width="265" height="166" fill="#000000" stroke="#00ffcc" stroke-width="1.5" />
+    
+    <rect x="12" y="12" width="90" height="18" fill="#00ffcc" />
+    <text class="pix-tag" x="18" y="25" fill="#000000">SIDE QUEST</text>
+
+    <text class="pix-head" x="12" y="52" fill="#00ffcc">VISION REALM</text>
+    <text class="pix-desc" x="12" y="74">Computer Vision &amp; AI</text>
+    <text class="pix-sub" x="12" y="94">• Python Vision Pipelines</text>
+    <text class="pix-sub" x="12" y="112">• Realtime Image Analysis</text>
+    <text class="pix-sub" x="12" y="130">• AI Backend Integration</text>
+
+    <!-- Progress -->
+    <rect x="12" y="144" width="241" height="8" fill="#180736" />
+    <rect x="12" y="144" width="165" height="8" fill="#00ffcc" />
+  </g>
+
+  <!-- ==================== QUEST 3 ==================== -->
+  <g transform="translate(610, 52)">
+    <rect x="0" y="0" width="265" height="166" fill="#000000" stroke="#ffe600" stroke-width="1.5" />
+    
+    <rect x="12" y="12" width="96" height="18" fill="#ffe600" />
+    <text class="pix-tag" x="18" y="25" fill="#000000">DAILY RAID</text>
+
+    <text class="pix-head" x="12" y="52" fill="#ffe600">CLEAN CODE</text>
+    <text class="pix-desc" x="12" y="74">System Scalability &amp; API</text>
+    <text class="pix-sub" x="12" y="94">• Spring Boot Architecture</text>
+    <text class="pix-sub" x="12" y="112">• Docker Containerization</text>
+    <text class="pix-sub" x="12" y="130">• Zero-downtime APIs</text>
+
+    <!-- Progress -->
+    <rect x="12" y="144" width="241" height="8" fill="#180736" />
+    <rect x="12" y="144" width="230" height="8" fill="#ffe600" />
+  </g>
+</svg>
+
