@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="100%" height="210" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+
+      .pk-title { font-family: 'Press Start 2P', monospace; font-size: 13px; fill: #F8F4E3; }
+      .pk-freq  { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #b45309; }
+      .pk-link  { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #102A25; }
+      .pk-desc  { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #245744; }
+
+      @keyframes pulseSignal {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      .anim-sig { animation: pulseSignal 1.8s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="896" height="206" rx="6" fill="#F4E8C1" stroke="#173D32" stroke-width="3" />
+  <rect x="6" y="6" width="888" height="198" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+
+  <rect x="6" y="6" width="888" height="34" rx="3" fill="#173D32" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="14" y="13" width="20" height="20" style="image-rendering: pixelated;" />
+  <text class="pk-title" x="42" y="28">📡 [ POKÉGEAR // COMMS &amp; TRANSMISSION CENTER ]</text>
+  <text class="pk-title anim-sig" x="650" y="27" font-size="9" fill="#F4C95D">● SIGNAL: ONLINE [100%]</text>
+
+    <!-- Pokéball Controls (Great Ball, Ultra Ball, Poké Ball) -->
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="830" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="852" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="874" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+
+  <g transform="translate(25, 52)">
+    <rect x="0" y="0" width="415" height="66" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="14" y="18" width="28" height="28" style="image-rendering: pixelated;" />
+    <text class="pk-freq" x="52" y="27">CH 01 // EMAIL TRANSMISSION</text>
+    <text class="pk-link" x="52" y="48">nguyendhoang1929@gmail.com</text>
+  </g>
+
+  <g transform="translate(460, 52)">
+    <rect x="0" y="0" width="415" height="66" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="14" y="18" width="28" height="28" style="image-rendering: pixelated;" />
+    <text class="pk-freq" x="52" y="27">CH 02 // GITHUB PROFILE BEACON</text>
+    <text class="pk-link" x="52" y="48">github.com/HoangLowCodee</text>
+  </g>
+
+  <g transform="translate(25, 128)">
+    <rect x="0" y="0" width="415" height="66" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="14" y="18" width="28" height="28" style="image-rendering: pixelated;" />
+    <text class="pk-freq" x="52" y="27">CH 03 // PROFESSIONAL LINKEDIN</text>
+    <text class="pk-link" x="52" y="48">Nguyễn Duy Hoàng (HoangLowCoding)</text>
+  </g>
+
+  <g transform="translate(460, 128)">
+    <rect x="0" y="0" width="415" height="66" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG1Ove1AJTmIcVzMc5rMcX/xf/OQv/ezvdKUlKlpcV7e4T///9QT2M9AAAAAXRSTlMAQObYZgAAAJ9JREFUGNNjYKALEBQUROIxCiopKQkKwPkiLkpKKi6GcOkSlw4l9xJnmAJmFycUvoiLkZKSi4uzAYzvrKkJ1O8MM0DYaNKkSUouxjC+qBKIH2ycCOWLKYFAaCiML5WktQrIDVsI469afXtpaNYqGJ/x1Nq7q1atWgOzn3Hu6dtA7my4ByTvnJk5c+ZGhP92Arm7BZC8v3v3bkHc4UFDAACipC3HuouENAAAAABJRU5ErkJggg==" x="14" y="18" width="28" height="28" style="image-rendering: pixelated;" />
+    <text class="pk-freq" x="52" y="27">CH 04 // TRAINER PORTFOLIO REALM</text>
+    <text class="pk-link" x="52" y="48">HoangLowCodee.github.io</text>
+  </g>
+</svg>

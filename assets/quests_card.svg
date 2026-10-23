@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%" height="340" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+
+      .pk-title { font-family: 'Press Start 2P', monospace; font-size: 13px; fill: #F8F4E3; }
+      .pk-sec   { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #F4C95D; }
+      .pk-quest { font-family: 'Press Start 2P', monospace; font-size: 9.5px; fill: #F8F4E3; }
+      .pk-status{ font-family: 'Press Start 2P', monospace; font-size: 8px; fill: #D95757; }
+      .pk-desc  { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #245744; }
+      .pk-stack { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #102A25; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="896" height="336" rx="6" fill="#F4E8C1" stroke="#173D32" stroke-width="3" />
+  <rect x="6" y="6" width="888" height="328" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+
+  <rect x="6" y="6" width="888" height="34" rx="3" fill="#173D32" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG1Ove1AJTmIcVzMc5rMcX/xf/OQv/ezvdKUlKlpcV7e4T///9QT2M9AAAAAXRSTlMAQObYZgAAAJ9JREFUGNNjYKALEBQUROIxCiopKQkKwPkiLkpKKi6GcOkSlw4l9xJnmAJmFycUvoiLkZKSi4uzAYzvrKkJ1O8MM0DYaNKkSUouxjC+qBKIH2ycCOWLKYFAaCiML5WktQrIDVsI469afXtpaNYqGJ/x1Nq7q1atWgOzn3Hu6dtA7my4ByTvnJk5c+ZGhP92Arm7BZC8v3v3bkHc4UFDAACipC3HuouENAAAAABJRU5ErkJggg==" x="14" y="13" width="20" height="20" style="image-rendering: pixelated;" />
+  <text class="pk-title" x="42" y="28">🗺️ [ QUEST LOG // ACTIVE MISSIONS &amp; PROJECTS ]</text>
+  <text class="pk-sec" x="660" y="27">LOGGED MISSIONS: 04</text>
+
+    <!-- Pokéball Controls (Great Ball, Ultra Ball, Poké Ball) -->
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="830" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="852" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="874" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+
+  <!-- QUEST 1: NESTJS BACKEND -->
+  <g transform="translate(25, 52)">
+    <rect x="0" y="0" width="415" height="130" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="28" rx="2" fill="#173D32" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG1Ove1AJTmIcVzMc5rMcX/xf/OQv/ezvdKUlKlpcV7e4T///9QT2M9AAAAAXRSTlMAQObYZgAAAJ9JREFUGNNjYKALEBQUROIxCiopKQkKwPkiLkpKKi6GcOkSlw4l9xJnmAJmFycUvoiLkZKSi4uzAYzvrKkJ1O8MM0DYaNKkSUouxjC+qBKIH2ycCOWLKYFAaCiML5WktQrIDVsI469afXtpaNYqGJ/x1Nq7q1atWgOzn3Hu6dtA7my4ByTvnJk5c+ZGhP92Arm7BZC8v3v3bkHc4UFDAACipC3HuouENAAAAABJRU5ErkJggg==" x="8" y="5" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-quest" x="32" y="19">QUEST 01 // NESTJS API &amp; PRISMA</text>
+    <text class="pk-status" x="325" y="19">[COMPLETED]</text>
+
+    <text class="pk-desc" x="14" y="54">Modular RESTful Backend Architecture with NestJS</text>
+    <text class="pk-desc" x="14" y="74">Prisma ORM, PostgreSQL, JWT Auth &amp; Passport.js</text>
+    <rect x="14" y="88" width="387" height="1" fill="#245744" stroke-dasharray="3 2" />
+    <text class="pk-stack" x="14" y="112">STACK: NestJS, TypeScript, Prisma, PostgreSQL, JWT</text>
+  </g>
+
+  <!-- QUEST 2: NEXT.JS FULLSTACK -->
+  <g transform="translate(460, 52)">
+    <rect x="0" y="0" width="415" height="130" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="28" rx="2" fill="#173D32" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="8" y="5" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-quest" x="32" y="19">QUEST 02 // NEXT.JS SHADCN APP</text>
+    <text class="pk-status" x="330" y="19" fill="#F4C95D">[IN BATTLE]</text>
+
+    <text class="pk-desc" x="14" y="54">High-performance SSR Web App with Next.js 14</text>
+    <text class="pk-desc" x="14" y="74">Tailwind CSS &amp; shadcn/ui Component Library</text>
+    <rect x="14" y="88" width="387" height="1" fill="#245744" stroke-dasharray="3 2" />
+    <text class="pk-stack" x="14" y="112">STACK: Next.js, React, Tailwind CSS, shadcn/ui</text>
+  </g>
+
+  <!-- QUEST 3: TURBOREPO MONOREPO -->
+  <g transform="translate(25, 194)">
+    <rect x="0" y="0" width="415" height="130" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="28" rx="2" fill="#173D32" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="8" y="5" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-quest" x="32" y="19">QUEST 03 // TURBOREPO MONOREPO</text>
+    <text class="pk-status" x="325" y="19">[COMPLETED]</text>
+
+    <text class="pk-desc" x="14" y="54">End-to-End TypeScript Monorepo Architecture</text>
+    <text class="pk-desc" x="14" y="74">Shared UI packages, backend services &amp; typed APIs</text>
+    <rect x="14" y="88" width="387" height="1" fill="#245744" stroke-dasharray="3 2" />
+    <text class="pk-stack" x="14" y="112">STACK: Turborepo, TypeScript, Next.js, NestJS, Git</text>
+  </g>
+
+  <!-- QUEST 4: REALTIME CHAT & OAUTH -->
+  <g transform="translate(460, 194)">
+    <rect x="0" y="0" width="415" height="130" rx="4" fill="#F8F4E3" stroke="#173D32" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="28" rx="2" fill="#173D32" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="8" y="5" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-quest" x="32" y="19">QUEST 04 // FIREBASE REALTIME CHAT</text>
+    <text class="pk-status" x="325" y="19">[COMPLETED]</text>
+
+    <text class="pk-desc" x="14" y="54">Interactive Chatbox with Firebase Realtime Sync</text>
+    <text class="pk-desc" x="14" y="74">Google &amp; GitHub OAuth 2.0 Social Authentication</text>
+    <rect x="14" y="88" width="387" height="1" fill="#245744" stroke-dasharray="3 2" />
+    <text class="pk-stack" x="14" y="112">STACK: Firebase, OAuth 2.0, React, NestJS, Vercel</text>
+  </g>
+</svg>

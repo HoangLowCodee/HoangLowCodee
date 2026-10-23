@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%" height="340" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+
+      .pk-title { font-family: 'Press Start 2P', monospace; font-size: 13px; fill: #F8F4E3; }
+      .pk-sec   { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #F8F4E3; }
+      .pk-item  { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #102A25; }
+      .pk-desc  { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #245744; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="896" height="336" rx="6" fill="#F4E8C1" stroke="#173D32" stroke-width="3" />
+  <rect x="6" y="6" width="888" height="328" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+
+  <rect x="6" y="6" width="888" height="34" rx="3" fill="#173D32" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="14" y="13" width="20" height="20" style="image-rendering: pixelated;" />
+  <text class="pk-title" x="42" y="28">🧰 [ TRAINER INVENTORY // TECH STACK ]</text>
+  <text class="pk-sec" x="660" y="27" fill="#F4C95D">ITEMS: 20/20 [BAG FULL]</text>
+
+    <!-- Pokéball Controls (Great Ball, Ultra Ball, Poké Ball) -->
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="830" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="852" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="874" y="14" width="18" height="18" style="image-rendering: pixelated;" />
+
+  <!-- ROW 1 -->
+  <!-- 1. Languages Pocket -->
+  <g transform="translate(25, 52)">
+    <rect x="0" y="0" width="415" height="124" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="26" rx="2" fill="#245744" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAGFBMVEX///8xMTGcvf9SY8XW7/9jc9Z7lO8pOpz93GUvAAAAAXRSTlMAQObYZgAAAJdJREFUeNq1zzEPgjAQBeAaBteeRN0vpcyIpLtRd0W6W8K5QpT27zu1tLu+7cvLJffY37LiqTe3tD4+E2eihKiFtzAFD9RE9kDBO8TuJYfg+1lL6ivPtbkYpAnCuSlOSCMLJouy54u1RWq9M5iVpkH5do+6bLq2CnZ4zWu1PNd9aIJo7XZ+jCxK7gRPptcuMYMmNQP2q3wBuUYaI2s3qXwAAAAASUVORK5CYII=" x="8" y="4" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-sec" x="32" y="18" fill="#F4C95D">ITEM POCKET: LANGUAGES</text>
+
+    <!-- Item 1: TypeScript -->
+    <g transform="translate(12, 36)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">TYPESCRIPT</text>
+      <text class="pk-desc" x="34" y="30">Primary Superpower</text>
+    </g>
+
+    <!-- Item 2: JavaScript -->
+    <g transform="translate(210, 36)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">JAVASCRIPT</text>
+      <text class="pk-desc" x="34" y="30">Modern ES6+ Engine</text>
+    </g>
+
+    <!-- Item 3: Python -->
+    <g transform="translate(12, 80)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">PYTHON 3</text>
+      <text class="pk-desc" x="34" y="30">Scripts &amp; Automation</text>
+    </g>
+
+    <!-- Item 4: SQL Relational -->
+    <g transform="translate(210, 80)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG1Ove1AJTmIcVzMc5rMcX/xf/OQv/ezvdKUlKlpcV7e4T///9QT2M9AAAAAXRSTlMAQObYZgAAAJ9JREFUGNNjYKALEBQUROIxCiopKQkKwPkiLkpKKi6GcOkSlw4l9xJnmAJmFycUvoiLkZKSi4uzAYzvrKkJ1O8MM0DYaNKkSUouxjC+qBKIH2ycCOWLKYFAaCiML5WktQrIDVsI469afXtpaNYqGJ/x1Nq7q1atWgOzn3Hu6dtA7my4ByTvnJk5c+ZGhP92Arm7BZC8v3v3bkHc4UFDAACipC3HuouENAAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">SQL CORE</text>
+      <text class="pk-desc" x="34" y="30">Relational Schemas</text>
+    </g>
+  </g>
+
+  <!-- 2. Backend & Monorepo Pocket -->
+  <g transform="translate(460, 52)">
+    <rect x="0" y="0" width="415" height="124" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="26" rx="2" fill="#245744" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG1Ove1AJTmIcVzMc5rMcX/xf/OQv/ezvdKUlKlpcV7e4T///9QT2M9AAAAAXRSTlMAQObYZgAAAJ9JREFUGNNjYKALEBQUROIxCiopKQkKwPkiLkpKKi6GcOkSlw4l9xJnmAJmFycUvoiLkZKSi4uzAYzvrKkJ1O8MM0DYaNKkSUouxjC+qBKIH2ycCOWLKYFAaCiML5WktQrIDVsI469afXtpaNYqGJ/x1Nq7q1atWgOzn3Hu6dtA7my4ByTvnJk5c+ZGhP92Arm7BZC8v3v3bkHc4UFDAACipC3HuouENAAAAABJRU5ErkJggg==" x="8" y="4" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-sec" x="32" y="18" fill="#F4C95D">ITEM POCKET: BACKEND &amp; ARCHITECTURE</text>
+
+    <!-- Item 1: NestJS -->
+    <g transform="translate(12, 36)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAGFBMVEX///8xMTGcvf9SY8XW7/9jc9Z7lO8pOpz93GUvAAAAAXRSTlMAQObYZgAAAJdJREFUeNq1zzEPgjAQBeAaBteeRN0vpcyIpLtRd0W6W8K5QpT27zu1tLu+7cvLJffY37LiqTe3tD4+E2eihKiFtzAFD9RE9kDBO8TuJYfg+1lL6ivPtbkYpAnCuSlOSCMLJouy54u1RWq9M5iVpkH5do+6bLq2CnZ4zWu1PNd9aIJo7XZ+jCxK7gRPptcuMYMmNQP2q3wBuUYaI2s3qXwAAAAASUVORK5CYII=" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">NESTJS</text>
+      <text class="pk-desc" x="34" y="30">Modular Backend</text>
+    </g>
+
+    <!-- Item 2: Node.js -->
+    <g transform="translate(210, 36)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">NODE.JS</text>
+      <text class="pk-desc" x="34" y="30">V8 Runtime Engine</text>
+    </g>
+
+    <!-- Item 3: Prisma ORM -->
+    <g transform="translate(12, 80)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">PRISMA ORM</text>
+      <text class="pk-desc" x="34" y="30">Type-Safe Client</text>
+    </g>
+
+    <!-- Item 4: Turborepo -->
+    <g transform="translate(210, 80)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAJ1BMVEX///8xMTHe3nP//5RCUkKtva2ElITFxd6EhJzm5v9re2u9zr2lpb2QdLFgAAAAAXRSTlMAQObYZgAAAMtJREFUeNq10b0KwjAQB/AEioNT/jZ00KniE/QJEmj9CI7iXpAg8QWkOPoIguAWiN1dXLr6YEqvCn0ADw7y43J3w7E/Bfpvnokf+VS0ybggzyALeMXitPt/LA5bF9ioM79s4GoPCHJkkI3z/fVDcompxPIkOxdeYgcJ33mO6KkgXVAtB4XRiWLcGEHtk02cKha0p3qdNKM0z20IVF/JwyOx1nlTtl7ANFtrNSpasNa42x0YbmTjMdSfVlSa5uc0By/yN/RZ9Mzxhzu8AUoCKSl2P3ciAAAAAElFTkSuQmCC" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">TURBOREPO</text>
+      <text class="pk-desc" x="34" y="30">High-Speed Monorepo</text>
+    </g>
+  </g>
+
+  <!-- ROW 2 -->
+  <!-- 3. Frontend & UI Pocket -->
+  <g transform="translate(25, 194)">
+    <rect x="0" y="0" width="415" height="124" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="26" rx="2" fill="#245744" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="8" y="4" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-sec" x="32" y="18" fill="#F4C95D">ITEM POCKET: FRONTEND &amp; UI</text>
+
+    <!-- Item 1: Next.js -->
+    <g transform="translate(12, 36)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">NEXT.JS</text>
+      <text class="pk-desc" x="34" y="30">SSR &amp; App Router</text>
+    </g>
+
+    <!-- Item 2: React -->
+    <g transform="translate(210, 36)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">REACT.JS</text>
+      <text class="pk-desc" x="34" y="30">Component Tree</text>
+    </g>
+
+    <!-- Item 3: Tailwind CSS -->
+    <g transform="translate(12, 80)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTH/1jpzhJQ6Slr/91qltcXWrRD///9SY2tKUlKlpcV7e4TezveiLSMSAAAAAXRSTlMAQObYZgAAAJRJREFUGNNjYKALEBQUROEqKSkhCTAqFRsXqQvA+UJhxsbmSoVwadOOZCC/HKaAsRTIN1KqhPGFldKMgfyZE+F8Y2Ogeah8JU04XwTMr5zpCOVLFVmtMlavnLIQxl+1untledUqGJ/x1IqOVatWrYHbf+N0N5B7G+5g2Z4zd+/e3Yjwz14gd7cAkn93794tiCc8aAcAu2gvi28y2uAAAAAASUVORK5CYII=" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">TAILWIND CSS</text>
+      <text class="pk-desc" x="34" y="30">Modern Styling</text>
+    </g>
+
+    <!-- Item 4: shadcn/ui -->
+    <g transform="translate(210, 80)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAGFBMVEX///8xMTH///+lpcXezvd7e4ScSjreWjp0ij1fAAAAAXRSTlMAQObYZgAAAHZJREFUeNq90D0SQDAQhmFukMU4wDLUxAWwDqDR+9sLKFxfGBExo83bPbPVt56bAMAiIoKhj6pUPA7wrDbnKxI/Dm7XltNfh5eJ+ttxmbFiN2rznCw0sLY/TMjMq9ButkSx1faifCeiwuypFKV47ZVSwvcfTjoAHUsYJtF4/l4AAAAASUVORK5CYII=" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">SHADCN/UI</text>
+      <text class="pk-desc" x="34" y="30">Accessible UI Lib</text>
+    </g>
+  </g>
+
+  <!-- 4. Databases, Auth & Tools Pocket -->
+  <g transform="translate(460, 194)">
+    <rect x="0" y="0" width="415" height="124" rx="4" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
+    <rect x="0" y="0" width="415" height="26" rx="2" fill="#245744" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAJ1BMVEX///8xMTHe3nP//5RCUkKtva2ElITFxd6EhJzm5v9re2u9zr2lpb2QdLFgAAAAAXRSTlMAQObYZgAAAMtJREFUeNq10b0KwjAQB/AEioNT/jZ00KniE/QJEmj9CI7iXpAg8QWkOPoIguAWiN1dXLr6YEqvCn0ADw7y43J3w7E/Bfpvnokf+VS0ybggzyALeMXitPt/LA5bF9ioM79s4GoPCHJkkI3z/fVDcompxPIkOxdeYgcJ33mO6KkgXVAtB4XRiWLcGEHtk02cKha0p3qdNKM0z20IVF/JwyOx1nlTtl7ANFtrNSpasNa42x0YbmTjMdSfVlSa5uc0By/yN/RZ9Mzxhzu8AUoCKSl2P3ciAAAAAElFTkSuQmCC" x="8" y="4" width="18" height="18" style="image-rendering: pixelated;" />
+    <text class="pk-sec" x="32" y="18" fill="#F4C95D">ITEM POCKET: DATABASE &amp; DEV TOOLS</text>
+
+    <!-- Item 1: PostgreSQL -->
+    <g transform="translate(12, 36)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTH/lDqcSjr/1jr////eWjpKUlKlpcV7e4TezvdcMgHRAAAAAXRSTlMAQObYZgAAAH5JREFUGNNjYKALEBQUROEqKSkhCTACuUpqAnC+kAtIIBEurRLqBOSnCeDgCymB1aclwvlg83DyhcH8tDRDKF/cSL0cyE0uhPHLKyLK0szLYXzG6aWh5eXllXD7l86IAHJXwB0sFTlz1apVjQj/dAG5HQJI/u3o6BDEEx60AwCJgyJdBXcpkgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">POSTGRESQL</text>
+      <text class="pk-desc" x="34" y="30">Primary Database</text>
+    </g>
+
+    <!-- Item 2: MySQL -->
+    <g transform="translate(210, 36)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG9MTE6lP//ra33SkoxUtYxQpQ61v////9KUlKlpcV7e4TezveOoVGFAAAAAXRSTlMAQObYZgAAAKJJREFUGNNjYKALEBQUROIJCRobGyMEGN2TgXzjQBhfJMyiGcgPEoDyRcM6ZxgbmygpQPmqahC+Isw4pQygeic4X0yp2NjYVEkJZoOwOtC0JCX1QihfHGSbuXoZjC9VbLXKOC0tfSGMv2r17GVpWatgfMZTK2euWrVqDcw9jDdPzwZyb8P4DLJzzty9e3cjwkN7gdzdAkje3717tyDu8KAhAACHXi7+w7SoSgAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">MYSQL</text>
+      <text class="pk-desc" x="34" y="30">Relational Storage</text>
+    </g>
+
+    <!-- Item 3: Auth & OAuth -->
+    <g transform="translate(12, 80)">
+      <rect x="0" y="0" width="185" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAKlBMVEX///8xMTG1Ove1AJTmIcVzMc5rMcX/xf/OQv/ezvdKUlKlpcV7e4T///9QT2M9AAAAAXRSTlMAQObYZgAAAJ9JREFUGNNjYKALEBQUROIxCiopKQkKwPkiLkpKKi6GcOkSlw4l9xJnmAJmFycUvoiLkZKSi4uzAYzvrKkJ1O8MM0DYaNKkSUouxjC+qBKIH2ycCOWLKYFAaCiML5WktQrIDVsI469afXtpaNYqGJ/x1Nq7q1atWgOzn3Hu6dtA7my4ByTvnJk5c+ZGhP92Arm7BZC8v3v3bkHc4UFDAACipC3HuouENAAAAABJRU5ErkJggg==" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">AUTH &amp; OAUTH</text>
+      <text class="pk-desc" x="34" y="30">JWT &amp; Passport.js</text>
+    </g>
+
+    <!-- Item 4: GitHub & VS Code -->
+    <g transform="translate(210, 80)">
+      <rect x="0" y="0" width="190" height="36" rx="3" fill="#F8F4E3" stroke="#173D32" stroke-width="1" />
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAA3NCSVQFBQUYJt5DAAAAIVBMVEX///8xMTG91v+cvf+MayH/99b/zkJSc9bFhBB7nO86Wpzmp+xQAAAAAXRSTlMAQObYZgAAAJVJREFUeNqtjDEOgkAQRXdvMEuhsQRv4JCY0HsAD+FIq41gR6U9xUYvsIRTmsxMHKDmd+9l3rhVFmCGvshnIjuczjDlki4T4fclEXVgfGyovv9/ZIixeWGRG2NsEUfQc+RVj9uS9VyWlqz9rpfz51v50wt3jrdtWaRBeXNlkQYQ9iwkN/Hl3ETk3MTIuYmacxMhuDX2A55kMgyd+b20AAAAAElFTkSuQmCC" x="8" y="8" width="20" height="20" style="image-rendering: pixelated;" />
+      <text class="pk-item" x="34" y="16">GITHUB &amp; VSC</text>
+      <text class="pk-desc" x="34" y="30">Dev Environment</text>
+    </g>
+  </g>
+</svg>
