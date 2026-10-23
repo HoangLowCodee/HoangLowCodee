@@ -1,56 +1,178 @@
 <div align="center">
 
-  <!-- ==================== 1. PIXEL RETRO BANNER ==================== -->
-  <img src="./assets/header.svg" width="100%" alt="HoangLowCoding - Pixel Cyber Banner" />
+  <!-- ==================== A. POKÉMON RETRO GBA BANNER ==================== -->
+  <img src="./assets/header.svg" width="100%" alt="Pokémon Trainer Profile Banner" />
 
   <br/><br/>
 
-  <!-- 8-Bit Retro Buttons -->
+  <!-- Quick Action Badges -->
   <a href="mailto:nguyendhoang1929@gmail.com">
-    <img src="https://img.shields.io/badge/►_SEND_TRANSMISSION-nguyendhoang1929%40gmail.com-ff007f?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/►_SEND_TRANSMISSION-nguyendhoang1929%40gmail.com-D95D39?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Transmission" />
   </a>
   <a href="https://github.com/HoangLowCodee">
-    <img src="https://img.shields.io/badge/►_GITHUB_BEACON-HoangLowCodee-00ffcc?style=for-the-badge&logo=github&logoColor=black" alt="GitHub" />
+    <img src="https://img.shields.io/badge/►_TRAINER_BEACON-HoangLowCodee-386641?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=HoangLowCodee&label=ARCADE_VIEWS&color=ffe600&style=for-the-badge" alt="Views" />
+  <img src="https://komarev.com/ghpvc/?username=HoangLowCodee&label=EXP_POINTS&color=588157&style=for-the-badge" alt="Views" />
 
+</div>
+
+<br/>
+
+<!-- ==================== B. ANIMATED INTRODUCTION ==================== -->
+### 🌿 Wild Developer Encounter!
+
+<p align="left">
+  <img align="right" width="105" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/1.gif" alt="Bulbasaur Sprite Animation" />
+  Xin chào! Mình là <b>Nguyễn Duy Hoàng</b> (<code>HoangLowCodee</code>) — một Full-Stack &amp; Backend Developer trẻ đang trên hành trình khám phá và chinh phục thế giới lập trình.
   <br/><br/>
-
-  <!-- ==================== 2. PIXEL CHARACTER SHEET ==================== -->
-  <img src="./assets/character_card.svg" width="100%" alt="RPG Character Profile" />
-
+  Hiện tại, mình đang tập trung nâng cao chuyên môn về <b>Microservices Architecture</b> và xây dựng các giải pháp <b>Hệ thống Quản lý Định danh &amp; Xác thực (IAM / Single Sign-On)</b>. Mình đam mê tạo ra các sản phẩm phần mềm sạch, bảo mật cao và vận hành ổn định.
   <br/><br/>
+  <i>Mục tiêu phát triển:</i> Không ngừng thu thập "Huy hiệu Kỹ năng", tối ưu hóa từng dòng code và phát triển các sản phẩm công nghệ hữu ích mỗi ngày.
+</p>
 
-  <!-- ==================== 3. PIXEL QUEST BOARD ==================== -->
-  <img src="./assets/quests_card.svg" width="100%" alt="Active Quest Board" />
+<br/>
 
-  <br/><br/>
+---
 
-  <!-- ==================== 4. PIXEL INVENTORY & SKILL TREE ==================== -->
-  <img src="./assets/inventory_card.svg" width="100%" alt="Inventory and Skill Tree" />
+<!-- ==================== C. ABOUT ME — TRAINER PROFILE ==================== -->
+## 🎮 About Me
 
-  <br/><br/>
+<div align="center">
+  <img src="./assets/trainer_card.svg" width="100%" alt="Pokémon Trainer Card" />
+</div>
 
-  <!-- ==================== 5. LIVE PIXEL ARCADE BATTLE ==================== -->
-  <img src="./assets/game_arena.svg" width="100%" alt="Live Pixel Arcade Battle" />
+<br/>
 
-  <br/><br/>
+* 🔭 **Currently working on:** `[CURRENT PROJECT]` — Hệ thống phân tán và các kiến trúc ứng dụng web hiệu năng cao.
+* 🌱 **Currently learning:** Spring Cloud, Distributed Tracing, Next.js App Router và Clean Architecture.
+* 💻 **Interested in:** Full-stack development, backend engineering và software architecture.
+* 🎯 **Goal:** Building useful software and improving every day.
+* 📍 **Location:** Vietnam 🇻🇳
 
-  <!-- ==================== 6. RETRO ARCADE BATTLE STATS ==================== -->
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=HoangLowCodee&show_icons=true&theme=synthwave&hide_border=false&border_color=00ffcc&bg_color=090514&title_color=00ffcc&icon_color=ff007f&text_color=cbd5e1" height="165" alt="Battle Stats" />
-    &nbsp;&nbsp;
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HoangLowCodee&layout=compact&theme=synthwave&hide_border=false&border_color=ffe600&bg_color=090514&title_color=ffe600&text_color=cbd5e1" height="165" alt="Language Mastery" />
+<br/>
+
+---
+
+<!-- ==================== D. TECH STACK — INVENTORY ==================== -->
+## 🧰 Tech Stack
+
+> *“Một Trainer giỏi luôn biết cách trang bị kỹ năng phù hợp cho từng thử thách.”*
+
+### 🗡️ Languages
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,python,ts,js,html,css" alt="Languages" />
+  </a>
+</p>
+
+### ⚙️ Backend
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=spring,nodejs,express,nest" alt="Backend" />
+  </a>
+</p>
+
+### 🎨 Frontend
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,next,tailwind,redux" alt="Frontend" />
+  </a>
+</p>
+
+### 🗄️ Database
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" alt="Database" />
+  </a>
+</p>
+
+### 🛠️ Tools
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,git,github,postman,linux,vscode" alt="Tools" />
+  </a>
+</p>
+
+<br/>
+
+---
+
+<!-- ==================== E. PROJECTS — QUEST LOG ==================== -->
+## 🗺️ Quest Log
+
+Dưới đây là một số chiến dịch tiêu biểu đang được hoàn thiện:
+
+| 🏆 Quest / Project | 📜 Description | ⚡ Tech Stack | 🔗 Links |
+| :--- | :--- | :--- | :--- |
+| **🛡️ IAM Fortress (Keycloak SSO)** | Cổng xác thực tập trung &amp; phân quyền người dùng chuẩn OAuth2/OIDC cho microservices. | `Java` `Spring Boot` `Keycloak` `Docker` | [Repository](https://github.com/HoangLowCodee) • [Demo](https://github.com/HoangLowCodee) |
+| **🌐 Enterprise Portal &amp; Gateway** | Cổng giao tiếp phân tán, định tuyến tải và quản lý rate limit cho hệ sinh thái backend. | `Spring Cloud` `Redis` `PostgreSQL` | [Repository](https://github.com/HoangLowCodee) • [Demo](https://github.com/HoangLowCodee) |
+| **⚡ Full-Stack Dashboard Hub** | Ứng dụng quản trị và giám sát trạng thái hệ thống theo thời gian thực với giao diện trực quan. | `React` `TypeScript` `Tailwind` `Node.js` | [Repository](https://github.com/HoangLowCodee) • [Demo](https://github.com/HoangLowCodee) |
+| **🤖 Vision AI Pipeline** | Module xử lý thị giác máy tính và phân loại dữ liệu hình ảnh tự động. | `Python` `PyTorch` `FastAPI` | [Repository](https://github.com/HoangLowCodee) • [Demo](https://github.com/HoangLowCodee) |
+
+<br/>
+
+---
+
+<!-- ==================== F. GITHUB STATS ==================== -->
+## 📊 GitHub Stats
+
+<div align="center">
+
+  <table border="0">
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=HoangLowCodee&show_icons=true&theme=forest&hide_border=false&border_color=588157&bg_color=1b2e1e&title_color=E9B949&icon_color=52b788&text_color=F5F1E8" height="165" alt="Trainer Battle Stats" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HoangLowCodee&layout=compact&theme=forest&hide_border=false&border_color=588157&bg_color=1b2e1e&title_color=E9B949&text_color=F5F1E8" height="165" alt="Language Mastery" />
+      </td>
+    </tr>
+  </table>
+
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HoangLowCodee&theme=forest&hide_border=false&border=588157&background=1b2e1e&stroke=52b788&ring=E9B949&fire=D95D39&currStreakLabel=52b788" height="155" alt="Contribution Streak" />
+
+</div>
+
+<br/>
+
+---
+
+<!-- ==================== G. CONTACT — COMMUNICATION CENTER ==================== -->
+## 📡 Let's Connect
+
+Bạn có ý tưởng dự án thú vị hoặc muốn cùng trao đổi về công nghệ? Hãy gửi tín hiệu đến Pokégear của mình:
+
+<div align="center">
+
+  <a href="https://github.com/HoangLowCodee">
+    <img src="https://img.shields.io/badge/GitHub-HoangLowCodee-386641?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="mailto:nguyendhoang1929@gmail.com">
+    <img src="https://img.shields.io/badge/Email-nguyendhoang1929%40gmail.com-D95D39?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/[YOUR_LINKEDIN]">
+    <img src="https://img.shields.io/badge/LinkedIn-Nguyen_Duy_Hoang-588157?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://[YOUR_PORTFOLIO].com">
+    <img src="https://img.shields.io/badge/Portfolio-Trainer_Realm-E9B949?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
+  </a>
+
+</div>
+
+<br/><br/>
+
+<!-- ==================== H. FOOTER ==================== -->
+<div align="center">
+
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" width="32" alt="Poké Ball" />
+
+  <p>
+    <i>Thanks for visiting my profile. See you on the next quest!</i>
   </p>
 
-  <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=HoangLowCodee&theme=synthwave&hide_border=false&border=ff007f&background=090514&stroke=00ffcc&ring=ff007f&fire=ffe600&currStreakLabel=00ffcc" height="155" alt="Streak Stats" />
-  </p>
-
-  <br/>
-
-  <p align="center">
-    <sub>👾 <b>INSERT COIN TO CONTINUE</b> • <i>Crafted with pure pixel magic by <a href="https://github.com/HoangLowCodee">HoangLowCoding</a></i> 🎮</sub>
-  </p>
+  <sub>👾 <b>GOTTA CODE 'EM ALL</b> • Crafted with Pokémon Pixel Art &amp; Markdown Magic by <a href="https://github.com/HoangLowCodee">HoangLowCoding</a> 🌿</sub>
 
 </div>

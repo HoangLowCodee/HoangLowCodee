@@ -1,254 +1,254 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="320" shape-rendering="crispEdges">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="100%" height="290" shape-rendering="crispEdges">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
 
-      .pix-title {
-        font-family: 'Press Start 2P', monospace;
-        font-size: 24px;
-        fill: #00ffcc;
-        text-shadow: 3px 3px 0px #ff0055, 6px 6px 0px #1e0038;
-      }
-      .pix-sub {
-        font-family: 'Press Start 2P', monospace;
-        font-size: 11px;
-        fill: #ffe600;
-        letter-spacing: 1px;
-      }
-      .pix-text {
-        font-family: 'Silkscreen', monospace;
-        font-size: 14px;
-        fill: #f8fafc;
-        letter-spacing: 0.5px;
-      }
-      .pix-accent {
-        font-family: 'Silkscreen', monospace;
-        font-size: 14px;
-        fill: #ff007f;
-      }
+      .pk-title { font-family: 'Press Start 2P', monospace; font-size: 20px; fill: #F5F1E8; }
+      .pk-sub   { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #E9B949; letter-spacing: 0.5px; }
+      .pk-text  { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #F5F1E8; }
+      .pk-green { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #A7C957; }
+      .pk-dark  { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #283618; }
+      .pk-dial  { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #283618; line-height: 1.6; }
 
-      /* Animations */
-      @keyframes floatChar {
+      /* Subtle Animations */
+      @keyframes floatPoke {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-8px); }
+        50% { transform: translateY(-6px); }
       }
-      @keyframes blinkCursor {
+      @keyframes spinBall {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(12deg); }
+        75% { transform: rotate(-12deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes cursorBlink {
         0%, 49% { opacity: 1; }
         50%, 100% { opacity: 0; }
       }
-      @keyframes pulseHeart {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.15); }
-      }
-      @keyframes starTwinkle {
-        0%, 100% { opacity: 0.2; }
-        50% { opacity: 1; }
-      }
-      @keyframes coinSpin {
-        0% { transform: scaleX(1); }
-        50% { transform: scaleX(0.1); }
-        100% { transform: scaleX(1); }
+      @keyframes grassRustle {
+        0%, 100% { transform: skewX(0deg); }
+        50% { transform: skewX(1.5deg); }
       }
 
-      .float-anim { animation: floatChar 3s ease-in-out infinite; }
-      .blink-anim { animation: blinkCursor 0.7s step-end infinite; }
-      .twinkle-1 { animation: starTwinkle 1.8s ease-in-out infinite; }
-      .twinkle-2 { animation: starTwinkle 2.4s ease-in-out infinite 0.7s; }
-      .twinkle-3 { animation: starTwinkle 1.5s ease-in-out infinite 1.2s; }
-      .heart-anim { animation: pulseHeart 1.2s ease-in-out infinite; transform-origin: 32px 32px; }
+      .anim-float { animation: floatPoke 2.5s ease-in-out infinite; }
+      .anim-ball  { animation: spinBall 3.2s ease-in-out infinite; transform-origin: center; }
+      .anim-blink { animation: cursorBlink 0.8s step-end infinite; }
+      .anim-grass { animation: grassRustle 4s ease-in-out infinite; }
     </style>
 
-    <!-- Scanline Pattern for CRT Screen -->
-    <pattern id="scanlines" width="100%" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="100%" y2="0" stroke="#000000" stroke-width="1.5" opacity="0.4" />
+    <!-- Scanline / Pixel Pattern -->
+    <pattern id="pixelGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#24442a" />
+      <rect width="4" height="4" fill="#2d5234" />
+      <rect x="4" y="4" width="4" height="4" fill="#2d5234" />
     </pattern>
-
-    <!-- Pixel Dither Gradients -->
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0a051b" />
-      <stop offset="40%" stop-color="#190a3a" />
-      <stop offset="80%" stop-color="#2c1256" />
-      <stop offset="100%" stop-color="#44107a" />
-    </linearGradient>
   </defs>
 
-  <!-- Sky Canvas -->
-  <rect x="0" y="0" width="900" height="320" fill="url(#skyGrad)" />
+  <!-- ==================== GBA FRAME ==================== -->
+  <rect x="2" y="2" width="896" height="286" rx="8" fill="#1b2e1e" stroke="#588157" stroke-width="4" />
+  <rect x="10" y="10" width="880" height="270" rx="4" fill="url(#pixelGrid)" />
 
-  <!-- Pixel Stars / Cyber Sky -->
-  <g fill="#00ffff">
-    <rect class="twinkle-1" x="60" y="40" width="4" height="4" />
-    <rect class="twinkle-2" x="180" y="25" width="6" height="6" fill="#ffe600" />
-    <rect class="twinkle-3" x="290" y="60" width="4" height="4" />
-    <rect class="twinkle-1" x="420" y="30" width="6" height="6" fill="#ff007f" />
-    <rect class="twinkle-2" x="650" y="45" width="4" height="4" />
-    <rect class="twinkle-3" x="820" y="35" width="6" height="6" fill="#ffe600" />
-    <rect class="twinkle-1" x="740" y="80" width="4" height="4" fill="#00ffcc" />
-    <rect class="twinkle-2" x="120" y="90" width="4" height="4" />
-    <rect class="twinkle-3" x="520" y="70" width="4" height="4" />
-  </g>
-
-  <!-- Distant Pixel Cyber City / Mountain Silhouette -->
-  <g fill="#0d0422">
-    <rect x="0" y="160" width="70" height="100" />
-    <rect x="70" y="180" width="90" height="80" />
-    <rect x="160" y="150" width="60" height="110" />
-    <rect x="220" y="190" width="100" height="70" />
-    <rect x="320" y="165" width="80" height="95" />
-    <rect x="400" y="140" width="70" height="120" />
-    <rect x="470" y="175" width="90" height="85" />
-    <rect x="560" y="155" width="80" height="105" />
-    <rect x="640" y="170" width="110" height="90" />
-    <rect x="750" y="145" width="80" height="115" />
-    <rect x="830" y="180" width="70" height="80" />
-    <!-- City Windows (Pixel Lights) -->
-    <rect x="25" y="175" width="4" height="6" fill="#ffe600" opacity="0.8" />
-    <rect x="45" y="195" width="4" height="6" fill="#00ffff" opacity="0.8" />
-    <rect x="180" y="165" width="4" height="6" fill="#ff007f" opacity="0.8" />
-    <rect x="195" y="190" width="4" height="6" fill="#ffe600" opacity="0.8" />
-    <rect x="425" y="155" width="4" height="6" fill="#00ffff" opacity="0.8" />
-    <rect x="440" y="180" width="4" height="6" fill="#ffe600" opacity="0.8" />
-    <rect x="770" y="160" width="4" height="6" fill="#ff007f" opacity="0.8" />
-  </g>
-
-  <!-- Pixel Cyber Grid Ground (Neon Arcade Horizon) -->
-  <g fill="#180736">
-    <rect x="0" y="240" width="900" height="80" />
-  </g>
-  <line x1="0" y1="240" x2="900" y2="240" stroke="#00ffcc" stroke-width="3" />
-  <line x1="0" y1="255" x2="900" y2="255" stroke="#ff007f" stroke-width="2" />
-  <line x1="0" y1="275" x2="900" y2="275" stroke="#ff007f" stroke-width="1.5" />
-  <line x1="0" y1="300" x2="900" y2="300" stroke="#7928ca" stroke-width="1" />
-  <!-- Perspective Ground Grid Lines -->
-  <line x1="100" y1="240" x2="0" y2="320" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
-  <line x1="250" y1="240" x2="160" y2="320" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
-  <line x1="400" y1="240" x2="360" y2="320" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
-  <line x1="500" y1="240" x2="540" y2="320" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
-  <line x1="650" y1="240" x2="740" y2="320" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
-  <line x1="800" y1="240" x2="900" y2="320" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
-
-  <!-- ==================== PIXEL ART SPRITES ==================== -->
-
-  <!-- Left: Floating Pixel Wizard & Familiar Cat -->
-  <g class="float-anim" transform="translate(45, 120)">
-    <!-- Wizard Hat (Purple & Gold) -->
-    <rect x="32" y="0" width="16" height="8" fill="#ffe600" />
-    <rect x="24" y="8" width="32" height="12" fill="#7928ca" />
-    <rect x="16" y="20" width="48" height="12" fill="#7928ca" />
-    <rect x="8" y="32" width="64" height="10" fill="#a855f7" />
-    <!-- Hat Gold Buckle -->
-    <rect x="32" y="28" width="16" height="8" fill="#ffe600" />
-    <rect x="36" y="30" width="8" height="4" fill="#000000" />
-    
-    <!-- Face / Shadow -->
-    <rect x="16" y="42" width="48" height="22" fill="#180736" />
-    <!-- Glowing Pixel Eyes -->
-    <rect x="24" y="48" width="8" height="6" fill="#00ffcc" />
-    <rect x="48" y="48" width="8" height="6" fill="#00ffcc" />
-    <rect x="26" y="50" width="4" height="2" fill="#ffffff" />
-    <rect x="50" y="50" width="4" height="2" fill="#ffffff" />
-
-    <!-- Robe / Body -->
-    <rect x="12" y="64" width="56" height="40" fill="#6b21a8" />
-    <rect x="20" y="64" width="40" height="40" fill="#7e22ce" />
-    <rect x="34" y="64" width="12" height="40" fill="#ffe600" />
-
-    <!-- Magic Staff with Glowing Cyan Crystal -->
-    <rect x="74" y="20" width="8" height="84" fill="#78350f" />
-    <!-- Crystal Top -->
-    <rect x="70" y="10" width="16" height="16" fill="#00ffcc" />
-    <rect x="74" y="6" width="8" height="24" fill="#ffffff" />
-    <rect x="66" y="14" width="24" height="8" fill="#00ffcc" />
-
-    <!-- Pixel Familiar: 8-Bit Cyber Slime / Cat -->
-    <g transform="translate(90, 70)">
-      <rect x="4" y="8" width="24" height="22" fill="#ff007f" />
-      <rect x="0" y="14" width="32" height="14" fill="#ff007f" />
-      <!-- Ears -->
-      <rect x="4" y="2" width="6" height="6" fill="#ff007f" />
-      <rect x="22" y="2" width="6" height="6" fill="#ff007f" />
-      <!-- Eyes -->
-      <rect x="6" y="12" width="4" height="6" fill="#ffe600" />
-      <rect x="22" y="12" width="4" height="6" fill="#ffe600" />
+  <!-- Route 1 Meadow Grass Floor -->
+  <g class="anim-grass">
+    <rect x="10" y="195" width="880" height="85" fill="#2d5a27" />
+    <rect x="10" y="195" width="880" height="6" fill="#588157" />
+    <!-- Grass Tufts -->
+    <g fill="#A7C957">
+      <polygon points="30,195 34,187 38,195" />
+      <polygon points="36,195 40,185 44,195" />
+      <polygon points="120,195 124,187 128,195" />
+      <polygon points="210,195 214,185 218,195" />
+      <polygon points="330,195 334,189 338,195" />
+      <polygon points="540,195 544,187 548,195" />
+      <polygon points="690,195 694,185 698,195" />
+      <polygon points="810,195 814,189 818,195" />
     </g>
   </g>
 
-  <!-- ==================== MAIN BANNER CONTENT ==================== -->
-  <g transform="translate(200, 48)">
-
-    <!-- Top Retro Arcade Pill -->
-    <rect x="0" y="0" width="220" height="24" fill="#000000" stroke="#00ffcc" stroke-width="2" />
-    <text class="pix-sub" x="12" y="17" fill="#00ffcc">● PLAYER ONE READY</text>
-
-    <!-- Main Nickname / Branding in 3D Pixel Style -->
-    <text class="pix-title" x="0" y="62">HOANG LOW CODING</text>
-    <text class="pix-sub" x="2" y="86">NGUYEN DUY HOANG // [LVL.99 BACKEND MAGE]</text>
-
-    <!-- Retro Stats HUD Row -->
-    <g transform="translate(0, 108)">
-      <!-- HP Card -->
-      <rect x="0" y="0" width="140" height="44" fill="#000000" stroke="#ff0055" stroke-width="2" />
-      <text class="pix-sub" x="10" y="18" fill="#ff0055">HP: 9999</text>
-      <!-- Pixel Hearts -->
-      <text class="pix-text" x="10" y="36" fill="#ff0055">♥♥♥♥♥</text>
-
-      <!-- MP Card (Coffee Power) -->
-      <rect x="150" y="0" width="160" height="44" fill="#000000" stroke="#00ffcc" stroke-width="2" />
-      <text class="pix-sub" x="160" y="18" fill="#00ffcc">MP: COFFEE</text>
-      <rect x="160" y="26" width="138" height="10" fill="#0d1117" />
-      <rect x="162" y="28" width="118" height="6" fill="#00ffcc" />
-
-      <!-- XP Card -->
-      <rect x="320" y="0" width="150" height="44" fill="#000000" stroke="#ffe600" stroke-width="2" />
-      <text class="pix-sub" x="330" y="18" fill="#ffe600">CLASS: IAM/SSO</text>
-      <text class="pix-text" x="330" y="36" fill="#ffffff">RANK: S-TIER</text>
-    </g>
-
-    <!-- Dialogue Terminal Box -->
-    <g transform="translate(0, 168)">
-      <rect x="0" y="0" width="470" height="48" fill="#000000" stroke="#a855f7" stroke-width="2" />
-      <!-- Terminal prompt -->
-      <text class="pix-text" x="14" y="24">
-        &gt; QUEST: <tspan fill="#00ffcc">FORGE DISTRIBUTED SSO &amp; KEYCLOAK</tspan>
-      </text>
-      <text class="pix-text" x="14" y="40">
-        &gt; SUB-QUEST: <tspan fill="#ffe600">VISION AI ENGINE</tspan> <tspan class="blink-anim" fill="#ff007f">█</tspan>
-      </text>
-    </g>
-  </g>
-
-  <!-- Right: 8-Bit Computer Screen with Floating Code -->
-  <g transform="translate(710, 48)">
-    <rect x="0" y="0" width="155" height="180" fill="#000000" stroke="#00ffcc" stroke-width="3" />
-    <rect x="8" y="8" width="139" height="164" fill="#090514" />
-    
-    <!-- Title bar -->
-    <rect x="8" y="8" width="139" height="18" fill="#190a3a" />
-    <rect x="12" y="12" width="10" height="10" fill="#ff0055" />
-    <rect x="26" y="12" width="10" height="10" fill="#ffe600" />
-    <rect x="40" y="12" width="10" height="10" fill="#00ffcc" />
-
-    <!-- Pixel Code lines inside screen -->
-    <text class="pix-sub" x="14" y="44" fill="#a855f7" font-size="8">while(alive){</text>
-    <text class="pix-sub" x="22" y="62" fill="#00ffcc" font-size="8">code();</text>
-    <text class="pix-sub" x="22" y="80" fill="#ffe600" font-size="8">secure();</text>
-    <text class="pix-sub" x="22" y="98" fill="#ff007f" font-size="8">coffee++;</text>
-    <text class="pix-sub" x="14" y="116" fill="#a855f7" font-size="8">}</text>
-    
-    <!-- Mini Sword Icon -->
-    <g transform="translate(55, 126)">
-      <rect x="14" y="0" width="4" height="20" fill="#ffffff" />
-      <rect x="8" y="18" width="16" height="4" fill="#ffe600" />
-      <rect x="14" y="22" width="4" height="8" fill="#ff0055" />
-    </g>
-  </g>
-
-  <!-- Arcade Outer Frame & Scanlines Overlay -->
-  <rect x="0" y="0" width="900" height="320" fill="url(#scanlines)" pointer-events="none" />
+  <!-- ==================== TOP HUD: ROUTE & BADGE BAR ==================== -->
+  <rect x="18" y="16" width="864" height="26" fill="#1b2e1e" stroke="#588157" stroke-width="1.5" />
   
-  <!-- Outer Beveled Pixel Border -->
-  <rect x="0" y="0" width="900" height="6" fill="#00ffcc" />
-  <rect x="0" y="314" width="900" height="6" fill="#ff007f" />
-  <rect x="0" y="0" width="6" height="320" fill="#00ffcc" />
-  <rect x="894" y="0" width="6" height="320" fill="#ff007f" />
+  <!-- Mini Poké Ball Icon -->
+  <g transform="translate(28, 21)">
+    <circle cx="8" cy="8" r="7" fill="#D95D39" stroke="#1b2e1e" stroke-width="1" />
+    <path d="M 1,8 A 7,7 0 0,0 15,8 Z" fill="#F5F1E8" />
+    <line x1="1" y1="8" x2="15" y2="8" stroke="#1b2e1e" stroke-width="1.5" />
+    <circle cx="8" cy="8" r="2.5" fill="#F5F1E8" stroke="#1b2e1e" stroke-width="1" />
+  </g>
+
+  <text class="pk-sub" x="52" y="33">ROUTE 01 // PALLET TOWN OUTSKIRTS</text>
+  <text class="pk-sub" x="430" y="33" fill="#A7C957">★ FULL-STACK DEVELOPER ★</text>
+  <text class="pk-sub" x="740" y="33" fill="#E9B949">LVL. 99 TRAINER</text>
+
+  <!-- ==================== LEFT PIXEL SPRITES: TRAINER RED & BULBASAUR ==================== -->
+  <g class="anim-float" transform="translate(40, 82)">
+    <!-- Shadow beneath sprites -->
+    <ellipse cx="65" cy="116" rx="60" ry="8" fill="#1b2e1e" opacity="0.6" />
+
+    <!-- 1. Pixel Trainer Sprite (Retro Red/Brendan) -->
+    <g transform="translate(10, 0)">
+      <!-- Red Cap -->
+      <rect x="12" y="4" width="20" height="8" fill="#D95D39" />
+      <rect x="8" y="10" width="28" height="6" fill="#D95D39" />
+      <rect x="28" y="12" width="10" height="4" fill="#ffffff" /> <!-- Cap Visor -->
+      <rect x="18" y="6" width="8" height="4" fill="#ffffff" /> <!-- Poké Ball Logo on Cap -->
+
+      <!-- Hair & Face -->
+      <rect x="10" y="16" width="24" height="14" fill="#ffdfba" />
+      <rect x="8" y="16" width="6" height="8" fill="#583101" /> <!-- Hair Left -->
+      <rect x="28" y="16" width="4" height="8" fill="#583101" /> <!-- Hair Right -->
+      <rect x="22" y="20" width="3" height="4" fill="#283618" /> <!-- Eye -->
+
+      <!-- Blue Vest & Black Undershirt -->
+      <rect x="8" y="30" width="26" height="24" fill="#D95D39" />
+      <rect x="14" y="30" width="14" height="24" fill="#1d3557" />
+      <rect x="18" y="30" width="6" height="24" fill="#ffffff" />
+
+      <!-- Backpack (Yellow) -->
+      <rect x="4" y="32" width="6" height="18" fill="#E9B949" stroke="#b45309" stroke-width="1" />
+
+      <!-- Blue Jeans -->
+      <rect x="10" y="54" width="22" height="34" fill="#2b4a6f" />
+      <rect x="19" y="64" width="4" height="24" fill="#1b2e1e" />
+
+      <!-- Red/White Sneakers -->
+      <rect x="8" y="88" width="10" height="10" fill="#D95D39" />
+      <rect x="6" y="94" width="12" height="4" fill="#ffffff" />
+      <rect x="24" y="88" width="10" height="10" fill="#D95D39" />
+      <rect x="24" y="94" width="12" height="4" fill="#ffffff" />
+    </g>
+
+    <!-- 2. Pixel Bulbasaur Sprite (Faithful Partner) -->
+    <g transform="translate(68, 38)">
+      <!-- Green Bulb -->
+      <rect x="22" y="12" width="20" height="18" fill="#386641" />
+      <rect x="26" y="6" width="12" height="12" fill="#588157" />
+      <rect x="30" y="2" width="6" height="8" fill="#A7C957" />
+      <rect x="24" y="14" width="4" height="4" fill="#D95D39" />
+
+      <!-- Body -->
+      <rect x="10" y="24" width="36" height="30" fill="#52b788" />
+      <!-- Dark patches -->
+      <rect x="14" y="28" width="6" height="6" fill="#2d6a4f" />
+      <rect x="24" y="34" width="6" height="5" fill="#2d6a4f" />
+
+      <!-- Head & Eyes -->
+      <rect x="4" y="24" width="24" height="20" fill="#74c69d" />
+      <!-- Red Eyes -->
+      <rect x="6" y="28" width="5" height="7" fill="#D95D39" />
+      <rect x="8" y="30" width="2" height="3" fill="#ffffff" />
+      <rect x="18" y="28" width="5" height="7" fill="#D95D39" />
+      <rect x="19" y="30" width="2" height="3" fill="#ffffff" />
+
+      <!-- Claws / Feet -->
+      <rect x="6" y="52" width="10" height="10" fill="#52b788" />
+      <rect x="6" y="60" width="3" height="3" fill="#ffffff" />
+      <rect x="10" y="60" width="3" height="3" fill="#ffffff" />
+      <rect x="30" y="52" width="10" height="10" fill="#52b788" />
+      <rect x="30" y="60" width="3" height="3" fill="#ffffff" />
+      <rect x="34" y="60" width="3" height="3" fill="#ffffff" />
+
+      <!-- Mini HP Pill -->
+      <g transform="translate(0, -14)">
+        <rect x="0" y="0" width="58" height="12" fill="#F5F1E8" stroke="#1b2e1e" stroke-width="1" />
+        <text class="pk-dark" x="3" y="9" font-size="6">BULBA</text>
+        <rect x="30" y="3" width="24" height="5" fill="#1b2e1e" />
+        <rect x="31" y="4" width="22" height="3" fill="#52b788" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== MAIN BANNER TEXT: TRAINER PROFILE ==================== -->
+  <g transform="translate(225, 58)">
+    <!-- Trainer Name in GBA Golden / Cream Outline -->
+    <text class="pk-title" x="0" y="32">NGUYEN DUY HOANG</text>
+    <text class="pk-sub" x="2" y="54" fill="#E9B949">TRAINER NAME: HOANGLOWCODEE</text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 68)">
+      <!-- Badge 1: Backend -->
+      <rect x="0" y="0" width="125" height="22" fill="#1b2e1e" stroke="#588157" stroke-width="1" />
+      <circle cx="12" cy="11" r="5" fill="#E9B949" />
+      <text class="pk-sub" x="24" y="15" font-size="7" fill="#F5F1E8">JAVA / SPRING</text>
+
+      <!-- Badge 2: Architecture -->
+      <rect x="135" y="0" width="145" height="22" fill="#1b2e1e" stroke="#588157" stroke-width="1" />
+      <circle cx="147" cy="11" r="5" fill="#52b788" />
+      <text class="pk-sub" x="159" y="15" font-size="7" fill="#F5F1E8">CLOUD &amp; DOCKER</text>
+
+      <!-- Badge 3: Security -->
+      <rect x="290" y="0" width="135" height="22" fill="#1b2e1e" stroke="#588157" stroke-width="1" />
+      <circle cx="302" cy="11" r="5" fill="#D95D39" />
+      <text class="pk-sub" x="314" y="15" font-size="7" fill="#F5F1E8">IAM / KEYCLOAK</text>
+    </g>
+
+    <!-- ==================== POKÉMON DIALOGUE TEXT BOX ==================== -->
+    <g transform="translate(0, 102)">
+      <!-- Dialogue Box Outline (Classic GBA FireRed / Emerald Rounded Cream Box) -->
+      <rect x="0" y="0" width="445" height="66" rx="4" fill="#F5F1E8" stroke="#386641" stroke-width="3" />
+      <rect x="3" y="3" width="439" height="60" rx="2" fill="#F5F1E8" stroke="#588157" stroke-width="1.5" />
+
+      <!-- Dialogue Text -->
+      <text class="pk-dial" x="16" y="24">"Building projects, one quest at a time."</text>
+      <text class="pk-dial" x="16" y="44" fill="#588157">Trainer Hoang encountered a wild bug! 🌿</text>
+
+      <!-- Classic GBA Next Dialogue Triangle Cursor -->
+      <polygon class="anim-blink" points="422,44 432,44 427,52" fill="#D95D39" />
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT SPRITE: PIXEL POKÉ BALL & BADGE CASE ==================== -->
+  <g transform="translate(700, 60)">
+    <!-- Trainer Card Frame -->
+    <rect x="0" y="0" width="175" height="180" rx="6" fill="#F5F1E8" stroke="#386641" stroke-width="3" />
+    <rect x="4" y="4" width="167" height="24" fill="#386641" />
+    <text class="pk-sub" x="20" y="20" font-size="8" fill="#F5F1E8">GYM BADGES [8/8]</text>
+
+    <!-- 8 Gym Badges Pixel Icons -->
+    <g transform="translate(16, 38)">
+      <!-- Badge 1: Boulder -->
+      <polygon points="12,4 20,12 12,20 4,12" fill="#94a3b8" stroke="#475569" stroke-width="1.5" />
+      <!-- Badge 2: Cascade -->
+      <circle cx="48" cy="12" r="8" fill="#52b788" stroke="#2d6a4f" stroke-width="1.5" />
+      <!-- Badge 3: Thunder -->
+      <polygon points="84,4 87,10 93,12 87,14 84,20 81,14 75,12 81,10" fill="#E9B949" stroke="#b45309" stroke-width="1.5" />
+      <!-- Badge 4: Rainbow -->
+      <rect x="114" y="6" width="12" height="12" rx="2" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5" />
+    </g>
+
+    <g transform="translate(16, 68)">
+      <!-- Badge 5: Soul -->
+      <circle cx="12" cy="12" r="7" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5" />
+      <!-- Badge 6: Marsh -->
+      <polygon points="48,4 56,12 48,20 40,12" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+      <!-- Badge 7: Volcano -->
+      <polygon points="84,4 90,18 78,18" fill="#D95D39" stroke="#991b1b" stroke-width="1.5" />
+      <!-- Badge 8: Earth -->
+      <rect x="114" y="6" width="12" height="12" fill="#A7C957" stroke="#386641" stroke-width="1.5" />
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="12" y1="104" x2="163" y2="104" stroke="#588157" stroke-width="1" stroke-dasharray="4 2" />
+
+    <!-- Animated Poké Ball Centerpiece -->
+    <g class="anim-ball" transform="translate(87, 140)">
+      <circle cx="0" cy="0" r="22" fill="#1b2e1e" stroke="#283618" stroke-width="1.5" />
+      <path d="M -22,0 A 22,22 0 0,0 22,0 Z" fill="#F5F1E8" />
+      <path d="M -22,0 A 22,22 0 0,1 22,0 Z" fill="#D95D39" />
+      <!-- Ultra Band Accents -->
+      <rect x="-14" y="-20" width="6" height="16" fill="#E9B949" />
+      <rect x="8" y="-20" width="6" height="16" fill="#E9B949" />
+      <!-- Belt & Button -->
+      <line x1="-22" y1="0" x2="22" y2="0" stroke="#1b2e1e" stroke-width="3" />
+      <circle cx="0" cy="0" r="7" fill="#1b2e1e" />
+      <circle cx="0" cy="0" r="5" fill="#F5F1E8" />
+      <circle cx="0" cy="0" r="2.5" fill="#1b2e1e" />
+    </g>
+  </g>
+
+  <!-- Outer GBA Border Highlights -->
+  <rect x="0" y="0" width="900" height="4" fill="#A7C957" />
+  <rect x="0" y="286" width="900" height="4" fill="#386641" />
+  <rect x="0" y="0" width="4" height="290" fill="#A7C957" />
+  <rect x="896" y="0" width="4" height="290" fill="#386641" />
 </svg>
