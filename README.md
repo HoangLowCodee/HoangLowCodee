@@ -1,18 +1,7 @@
 <div align="center">
 
   <!-- ==================== 1. GAME HEADER — OPENING SCREEN ==================== -->
-  <img src="./assets/header.svg" width="100%" alt="Pokémon Emerald Developer Trainer Opening Screen" />
-
-  <br/><br/>
-
-  <!-- Pokégear Quick Action Transmission Badges -->
-  <a href="mailto:nguyendhoang1929@gmail.com">
-    <img src="https://img.shields.io/badge/►_TRANSMISSION-nguyendhoang1929%40gmail.com-D95757?style=for-the-badge&amp;logo=gmail&amp;logoColor=F8F4E3" alt="Send Email" />
-  </a>
-  <a href="https://github.com/HoangLowCodee">
-    <img src="https://img.shields.io/badge/►_TRAINER_BEACON-HoangLowCodee-173D32?style=for-the-badge&amp;logo=github&amp;logoColor=F8F4E3" alt="GitHub Profile" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=HoangLowCodee&amp;label=EXP_POINTS&amp;color=245744&amp;labelColor=102A25&amp;style=for-the-badge" alt="Arcade EXP Views" />
+  <img src="./assets/emerald_header.svg" width="100%" alt="Pokémon Emerald Developer Trainer Opening Screen" />
 
   <br/><br/>
 
