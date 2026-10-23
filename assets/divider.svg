@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 20" width="100%" height="20" shape-rendering="crispEdges">
+  <!-- Left Dashed Pixel Line -->
+  <line x1="10" y1="10" x2="420" y2="10" stroke="#245744" stroke-width="2" stroke-dasharray="8 6" />
+  <line x1="10" y1="12" x2="420" y2="12" stroke="#102A25" stroke-width="1" />
+
+  <!-- Center Poké Ball Emblem -->
+  <g transform="translate(450, 10)">
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="8" fill="#173D32" stroke="#245744" stroke-width="1.5" />
+    <!-- Top Half Red -->
+    <path d="M -8,0 A 8,8 0 0,1 8,0 Z" fill="#D95757" />
+    <!-- Bottom Half Cream -->
+    <path d="M -8,0 A 8,8 0 0,0 8,0 Z" fill="#F4E8C1" />
+    <!-- Center Line -->
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#102A25" stroke-width="1.5" />
+    <!-- Center Button -->
+    <circle cx="0" cy="0" r="3" fill="#102A25" />
+    <circle cx="0" cy="0" r="1.8" fill="#F4E8C1" />
+  </g>
+
+  <!-- Right Dashed Pixel Line -->
+  <line x1="480" y1="10" x2="890" y2="10" stroke="#245744" stroke-width="2" stroke-dasharray="8 6" />
+  <line x1="480" y1="12" x2="890" y2="12" stroke="#102A25" stroke-width="1" />
+</svg>

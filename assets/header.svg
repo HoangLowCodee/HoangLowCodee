@@ -3,17 +3,17 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap');
 
-      .pk-title { font-family: 'Press Start 2P', monospace; font-size: 20px; fill: #F5F1E8; }
-      .pk-sub   { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #E9B949; letter-spacing: 0.5px; }
-      .pk-text  { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #F5F1E8; }
-      .pk-green { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #A7C957; }
-      .pk-dark  { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #283618; }
-      .pk-dial  { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #283618; line-height: 1.6; }
+      .pk-title { font-family: 'Press Start 2P', monospace; font-size: 20px; fill: #F8F4E3; }
+      .pk-sub   { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #F4C95D; letter-spacing: 0.5px; }
+      .pk-text  { font-family: 'Silkscreen', monospace; font-size: 13px; fill: #F8F4E3; }
+      .pk-green { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #8FBF91; }
+      .pk-dark  { font-family: 'Press Start 2P', monospace; font-size: 9px; fill: #26382D; }
+      .pk-dial  { font-family: 'Press Start 2P', monospace; font-size: 10px; fill: #26382D; line-height: 1.6; }
 
-      /* Subtle Animations */
+      /* Subtle, restrained animations */
       @keyframes floatPoke {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
+        50% { transform: translateY(-5px); }
       }
       @keyframes spinBall {
         0% { transform: rotate(0deg); }
@@ -27,228 +27,222 @@
       }
       @keyframes grassRustle {
         0%, 100% { transform: skewX(0deg); }
-        50% { transform: skewX(1.5deg); }
+        50% { transform: skewX(1.2deg); }
       }
 
-      .anim-float { animation: floatPoke 2.5s ease-in-out infinite; }
-      .anim-ball  { animation: spinBall 3.2s ease-in-out infinite; transform-origin: center; }
+      .anim-float { animation: floatPoke 3s ease-in-out infinite; }
+      .anim-ball  { animation: spinBall 3.5s ease-in-out infinite; transform-origin: center; }
       .anim-blink { animation: cursorBlink 0.8s step-end infinite; }
       .anim-grass { animation: grassRustle 4s ease-in-out infinite; }
     </style>
 
-    <!-- Scanline / Pixel Pattern -->
+    <!-- Scanline / Pixel Pattern using controlled palette -->
     <pattern id="pixelGrid" width="8" height="8" patternUnits="userSpaceOnUse">
-      <rect width="8" height="8" fill="#24442a" />
-      <rect width="4" height="4" fill="#2d5234" />
-      <rect x="4" y="4" width="4" height="4" fill="#2d5234" />
+      <rect width="8" height="8" fill="#102A25" />
+      <rect width="4" height="4" fill="#173D32" />
+      <rect x="4" y="4" width="4" height="4" fill="#173D32" />
     </pattern>
   </defs>
 
   <!-- ==================== GBA FRAME ==================== -->
-  <rect x="2" y="2" width="896" height="286" rx="8" fill="#1b2e1e" stroke="#588157" stroke-width="4" />
-  <rect x="10" y="10" width="880" height="270" rx="4" fill="url(#pixelGrid)" />
+  <rect x="2" y="2" width="896" height="286" rx="6" fill="#102A25" stroke="#245744" stroke-width="3" />
+  <rect x="8" y="8" width="884" height="274" rx="4" fill="url(#pixelGrid)" />
 
-  <!-- Route 1 Meadow Grass Floor -->
+  <!-- Hoenn Route 101 Meadow Grass Floor -->
   <g class="anim-grass">
-    <rect x="10" y="195" width="880" height="85" fill="#2d5a27" />
-    <rect x="10" y="195" width="880" height="6" fill="#588157" />
-    <!-- Grass Tufts -->
-    <g fill="#A7C957">
-      <polygon points="30,195 34,187 38,195" />
-      <polygon points="36,195 40,185 44,195" />
-      <polygon points="120,195 124,187 128,195" />
-      <polygon points="210,195 214,185 218,195" />
-      <polygon points="330,195 334,189 338,195" />
-      <polygon points="540,195 544,187 548,195" />
-      <polygon points="690,195 694,185 698,195" />
-      <polygon points="810,195 814,189 818,195" />
+    <rect x="8" y="196" width="884" height="86" fill="#173D32" />
+    <rect x="8" y="196" width="884" height="4" fill="#245744" />
+    <!-- Grass Tufts in Muted Green -->
+    <g fill="#8FBF91">
+      <polygon points="30,196 34,188 38,196" />
+      <polygon points="36,196 40,186 44,196" />
+      <polygon points="120,196 124,188 128,196" />
+      <polygon points="210,196 214,186 218,196" />
+      <polygon points="330,196 334,190 338,196" />
+      <polygon points="540,196 544,188 548,196" />
+      <polygon points="690,196 694,186 698,196" />
+      <polygon points="810,196 814,190 818,196" />
     </g>
   </g>
 
   <!-- ==================== TOP HUD: ROUTE & BADGE BAR ==================== -->
-  <rect x="18" y="16" width="864" height="26" fill="#1b2e1e" stroke="#588157" stroke-width="1.5" />
+  <rect x="16" y="16" width="868" height="26" fill="#173D32" stroke="#245744" stroke-width="1.5" />
   
   <!-- Mini Poké Ball Icon -->
-  <g transform="translate(28, 21)">
-    <circle cx="8" cy="8" r="7" fill="#D95D39" stroke="#1b2e1e" stroke-width="1" />
-    <path d="M 1,8 A 7,7 0 0,0 15,8 Z" fill="#F5F1E8" />
-    <line x1="1" y1="8" x2="15" y2="8" stroke="#1b2e1e" stroke-width="1.5" />
-    <circle cx="8" cy="8" r="2.5" fill="#F5F1E8" stroke="#1b2e1e" stroke-width="1" />
+  <g transform="translate(26, 21)">
+    <circle cx="8" cy="8" r="7" fill="#D95757" stroke="#102A25" stroke-width="1" />
+    <path d="M 1,8 A 7,7 0 0,0 15,8 Z" fill="#F4E8C1" />
+    <line x1="1" y1="8" x2="15" y2="8" stroke="#102A25" stroke-width="1.5" />
+    <circle cx="8" cy="8" r="2.5" fill="#F4E8C1" stroke="#102A25" stroke-width="1" />
   </g>
 
-  <text class="pk-sub" x="52" y="33">ROUTE 01 // PALLET TOWN OUTSKIRTS</text>
-  <text class="pk-sub" x="430" y="33" fill="#A7C957">★ FULL-STACK DEVELOPER ★</text>
-  <text class="pk-sub" x="740" y="33" fill="#E9B949">LVL. 99 TRAINER</text>
+  <text class="pk-sub" x="50" y="33" fill="#8FBF91">HOENN REGION // ROUTE 101</text>
+  <text class="pk-sub" x="420" y="33" fill="#F4C95D">★ FULL-STACK / BACKEND DEVELOPER ★</text>
+  <text class="pk-sub" x="740" y="33" fill="#F4C95D">LVL. 99 TRAINER</text>
 
-  <!-- ==================== LEFT PIXEL SPRITES: TRAINER RED & BULBASAUR ==================== -->
-  <g class="anim-float" transform="translate(40, 82)">
+  <!-- ==================== LEFT PIXEL SPRITES: TRAINER & HOENN STARTER ==================== -->
+  <g class="anim-float" transform="translate(36, 82)">
     <!-- Shadow beneath sprites -->
-    <ellipse cx="65" cy="116" rx="60" ry="8" fill="#1b2e1e" opacity="0.6" />
+    <ellipse cx="65" cy="116" rx="60" ry="7" fill="#102A25" opacity="0.7" />
 
-    <!-- 1. Pixel Trainer Sprite (Retro Red/Brendan) -->
+    <!-- 1. Pixel Trainer Sprite (Brendan / Red Emerald Style) -->
     <g transform="translate(10, 0)">
-      <!-- Red Cap -->
-      <rect x="12" y="4" width="20" height="8" fill="#D95D39" />
-      <rect x="8" y="10" width="28" height="6" fill="#D95D39" />
-      <rect x="28" y="12" width="10" height="4" fill="#ffffff" /> <!-- Cap Visor -->
-      <rect x="18" y="6" width="8" height="4" fill="#ffffff" /> <!-- Poké Ball Logo on Cap -->
+      <!-- Cap / Bandana (Red & White) -->
+      <rect x="12" y="4" width="20" height="8" fill="#D95757" />
+      <rect x="8" y="10" width="28" height="6" fill="#D95757" />
+      <rect x="28" y="12" width="10" height="4" fill="#F8F4E3" /> <!-- Visor -->
+      <rect x="18" y="6" width="8" height="4" fill="#F8F4E3" />
 
       <!-- Hair & Face -->
       <rect x="10" y="16" width="24" height="14" fill="#ffdfba" />
-      <rect x="8" y="16" width="6" height="8" fill="#583101" /> <!-- Hair Left -->
-      <rect x="28" y="16" width="4" height="8" fill="#583101" /> <!-- Hair Right -->
-      <rect x="22" y="20" width="3" height="4" fill="#283618" /> <!-- Eye -->
+      <rect x="8" y="16" width="6" height="8" fill="#3e2723" /> <!-- Hair Left -->
+      <rect x="28" y="16" width="4" height="8" fill="#3e2723" /> <!-- Hair Right -->
+      <rect x="22" y="20" width="3" height="4" fill="#102A25" /> <!-- Eye -->
 
-      <!-- Blue Vest & Black Undershirt -->
-      <rect x="8" y="30" width="26" height="24" fill="#D95D39" />
-      <rect x="14" y="30" width="14" height="24" fill="#1d3557" />
-      <rect x="18" y="30" width="6" height="24" fill="#ffffff" />
+      <!-- Vest & Undershirt -->
+      <rect x="8" y="30" width="26" height="24" fill="#D95757" />
+      <rect x="14" y="30" width="14" height="24" fill="#173D32" />
+      <rect x="18" y="30" width="6" height="24" fill="#F8F4E3" />
 
-      <!-- Backpack (Yellow) -->
-      <rect x="4" y="32" width="6" height="18" fill="#E9B949" stroke="#b45309" stroke-width="1" />
+      <!-- Backpack (Gold Accent) -->
+      <rect x="4" y="32" width="6" height="18" fill="#F4C95D" stroke="#173D32" stroke-width="1" />
 
-      <!-- Blue Jeans -->
-      <rect x="10" y="54" width="22" height="34" fill="#2b4a6f" />
-      <rect x="19" y="64" width="4" height="24" fill="#1b2e1e" />
+      <!-- Pants / Jeans -->
+      <rect x="10" y="54" width="22" height="34" fill="#245744" />
+      <rect x="19" y="64" width="4" height="24" fill="#102A25" />
 
-      <!-- Red/White Sneakers -->
-      <rect x="8" y="88" width="10" height="10" fill="#D95D39" />
-      <rect x="6" y="94" width="12" height="4" fill="#ffffff" />
-      <rect x="24" y="88" width="10" height="10" fill="#D95D39" />
-      <rect x="24" y="94" width="12" height="4" fill="#ffffff" />
+      <!-- Shoes -->
+      <rect x="8" y="88" width="10" height="10" fill="#D95757" />
+      <rect x="6" y="94" width="12" height="4" fill="#F8F4E3" />
+      <rect x="24" y="88" width="10" height="10" fill="#D95757" />
+      <rect x="24" y="94" width="12" height="4" fill="#F8F4E3" />
     </g>
 
-    <!-- 2. Pixel Bulbasaur Sprite (Faithful Partner) -->
+    <!-- 2. Pixel Companion Sprite (Treecko / Emerald Partner) -->
     <g transform="translate(68, 38)">
-      <!-- Green Bulb -->
-      <rect x="22" y="12" width="20" height="18" fill="#386641" />
-      <rect x="26" y="6" width="12" height="12" fill="#588157" />
-      <rect x="30" y="2" width="6" height="8" fill="#A7C957" />
-      <rect x="24" y="14" width="4" height="4" fill="#D95D39" />
+      <!-- Green Tail / Foliage -->
+      <rect x="24" y="10" width="18" height="18" fill="#173D32" />
+      <rect x="28" y="4" width="12" height="12" fill="#245744" />
+      <rect x="32" y="0" width="6" height="8" fill="#8FBF91" />
 
       <!-- Body -->
-      <rect x="10" y="24" width="36" height="30" fill="#52b788" />
-      <!-- Dark patches -->
-      <rect x="14" y="28" width="6" height="6" fill="#2d6a4f" />
-      <rect x="24" y="34" width="6" height="5" fill="#2d6a4f" />
+      <rect x="10" y="24" width="36" height="30" fill="#8FBF91" />
+      <rect x="14" y="28" width="6" height="6" fill="#245744" />
+      <rect x="24" y="34" width="6" height="5" fill="#245744" />
 
-      <!-- Head & Eyes -->
-      <rect x="4" y="24" width="24" height="20" fill="#74c69d" />
-      <!-- Red Eyes -->
-      <rect x="6" y="28" width="5" height="7" fill="#D95D39" />
-      <rect x="8" y="30" width="2" height="3" fill="#ffffff" />
-      <rect x="18" y="28" width="5" height="7" fill="#D95D39" />
-      <rect x="19" y="30" width="2" height="3" fill="#ffffff" />
+      <!-- Head & Big Yellow Eyes -->
+      <rect x="4" y="24" width="24" height="20" fill="#a3d9a5" />
+      <rect x="6" y="28" width="5" height="7" fill="#F4C95D" />
+      <rect x="8" y="30" width="2" height="3" fill="#102A25" />
+      <rect x="18" y="28" width="5" height="7" fill="#F4C95D" />
+      <rect x="19" y="30" width="2" height="3" fill="#102A25" />
 
-      <!-- Claws / Feet -->
-      <rect x="6" y="52" width="10" height="10" fill="#52b788" />
-      <rect x="6" y="60" width="3" height="3" fill="#ffffff" />
-      <rect x="10" y="60" width="3" height="3" fill="#ffffff" />
-      <rect x="30" y="52" width="10" height="10" fill="#52b788" />
-      <rect x="30" y="60" width="3" height="3" fill="#ffffff" />
-      <rect x="34" y="60" width="3" height="3" fill="#ffffff" />
+      <!-- Feet -->
+      <rect x="6" y="52" width="10" height="10" fill="#8FBF91" />
+      <rect x="6" y="60" width="3" height="3" fill="#F8F4E3" />
+      <rect x="10" y="60" width="3" height="3" fill="#F8F4E3" />
+      <rect x="30" y="52" width="10" height="10" fill="#8FBF91" />
+      <rect x="30" y="60" width="3" height="3" fill="#F8F4E3" />
+      <rect x="34" y="60" width="3" height="3" fill="#F8F4E3" />
 
       <!-- Mini HP Pill -->
       <g transform="translate(0, -14)">
-        <rect x="0" y="0" width="58" height="12" fill="#F5F1E8" stroke="#1b2e1e" stroke-width="1" />
-        <text class="pk-dark" x="3" y="9" font-size="6">BULBA</text>
-        <rect x="30" y="3" width="24" height="5" fill="#1b2e1e" />
-        <rect x="31" y="4" width="22" height="3" fill="#52b788" />
+        <rect x="0" y="0" width="58" height="12" fill="#F4E8C1" stroke="#102A25" stroke-width="1" />
+        <text class="pk-dark" x="3" y="9" font-size="6">PARTNER</text>
+        <rect x="34" y="3" width="20" height="5" fill="#102A25" />
+        <rect x="35" y="4" width="18" height="3" fill="#8FBF91" />
       </g>
     </g>
   </g>
 
-  <!-- ==================== MAIN BANNER TEXT: TRAINER PROFILE ==================== -->
+  <!-- ==================== MAIN BANNER TEXT: TRAINER IDENTITY ==================== -->
   <g transform="translate(225, 58)">
-    <!-- Trainer Name in GBA Golden / Cream Outline -->
     <text class="pk-title" x="0" y="32">NGUYEN DUY HOANG</text>
-    <text class="pk-sub" x="2" y="54" fill="#E9B949">TRAINER NAME: HOANGLOWCODEE</text>
+    <text class="pk-sub" x="2" y="54" fill="#F4C95D">TRAINER HANDLE: HOANGLOWCODEE</text>
 
     <!-- Badges Row -->
     <g transform="translate(0, 68)">
       <!-- Badge 1: Backend -->
-      <rect x="0" y="0" width="125" height="22" fill="#1b2e1e" stroke="#588157" stroke-width="1" />
-      <circle cx="12" cy="11" r="5" fill="#E9B949" />
-      <text class="pk-sub" x="24" y="15" font-size="7" fill="#F5F1E8">JAVA / SPRING</text>
+      <rect x="0" y="0" width="125" height="22" fill="#173D32" stroke="#245744" stroke-width="1" />
+      <circle cx="12" cy="11" r="5" fill="#F4C95D" />
+      <text class="pk-sub" x="24" y="15" font-size="7" fill="#F8F4E3">JAVA / SPRING</text>
 
       <!-- Badge 2: Architecture -->
-      <rect x="135" y="0" width="145" height="22" fill="#1b2e1e" stroke="#588157" stroke-width="1" />
-      <circle cx="147" cy="11" r="5" fill="#52b788" />
-      <text class="pk-sub" x="159" y="15" font-size="7" fill="#F5F1E8">CLOUD &amp; DOCKER</text>
+      <rect x="135" y="0" width="145" height="22" fill="#173D32" stroke="#245744" stroke-width="1" />
+      <circle cx="147" cy="11" r="5" fill="#8FBF91" />
+      <text class="pk-sub" x="159" y="15" font-size="7" fill="#F8F4E3">CLOUD &amp; DOCKER</text>
 
       <!-- Badge 3: Security -->
-      <rect x="290" y="0" width="135" height="22" fill="#1b2e1e" stroke="#588157" stroke-width="1" />
-      <circle cx="302" cy="11" r="5" fill="#D95D39" />
-      <text class="pk-sub" x="314" y="15" font-size="7" fill="#F5F1E8">IAM / KEYCLOAK</text>
+      <rect x="290" y="0" width="135" height="22" fill="#173D32" stroke="#245744" stroke-width="1" />
+      <circle cx="302" cy="11" r="5" fill="#D95757" />
+      <text class="pk-sub" x="314" y="15" font-size="7" fill="#F8F4E3">IAM / KEYCLOAK</text>
     </g>
 
-    <!-- ==================== POKÉMON DIALOGUE TEXT BOX ==================== -->
+    <!-- ==================== POKÉMON DIALOGUE TEXT BOX (CREAM #F4E8C1) ==================== -->
     <g transform="translate(0, 102)">
-      <!-- Dialogue Box Outline (Classic GBA FireRed / Emerald Rounded Cream Box) -->
-      <rect x="0" y="0" width="445" height="66" rx="4" fill="#F5F1E8" stroke="#386641" stroke-width="3" />
-      <rect x="3" y="3" width="439" height="60" rx="2" fill="#F5F1E8" stroke="#588157" stroke-width="1.5" />
+      <rect x="0" y="0" width="445" height="66" rx="4" fill="#F4E8C1" stroke="#173D32" stroke-width="3" />
+      <rect x="3" y="3" width="439" height="60" rx="2" fill="#F4E8C1" stroke="#245744" stroke-width="1.5" />
 
       <!-- Dialogue Text -->
       <text class="pk-dial" x="16" y="24">"Building projects, one quest at a time."</text>
-      <text class="pk-dial" x="16" y="44" fill="#588157">Trainer Hoang encountered a wild bug! 🌿</text>
+      <text class="pk-dial" x="16" y="44" fill="#245744">Trainer Hoang is ready for battle! 🌿</text>
 
-      <!-- Classic GBA Next Dialogue Triangle Cursor -->
-      <polygon class="anim-blink" points="422,44 432,44 427,52" fill="#D95D39" />
+      <!-- Blinking Next Dialogue Cursor -->
+      <polygon class="anim-blink" points="422,44 432,44 427,52" fill="#D95757" />
     </g>
   </g>
 
-  <!-- ==================== RIGHT SPRITE: PIXEL POKÉ BALL & BADGE CASE ==================== -->
+  <!-- ==================== RIGHT PANEL: BADGE CASE & POKÉ BALL ==================== -->
   <g transform="translate(700, 60)">
-    <!-- Trainer Card Frame -->
-    <rect x="0" y="0" width="175" height="180" rx="6" fill="#F5F1E8" stroke="#386641" stroke-width="3" />
-    <rect x="4" y="4" width="167" height="24" fill="#386641" />
-    <text class="pk-sub" x="20" y="20" font-size="8" fill="#F5F1E8">GYM BADGES [8/8]</text>
+    <rect x="0" y="0" width="175" height="180" rx="6" fill="#F4E8C1" stroke="#173D32" stroke-width="3" />
+    <rect x="4" y="4" width="167" height="24" fill="#173D32" />
+    <text class="pk-sub" x="20" y="20" font-size="8" fill="#F8F4E3">GYM BADGES [8/8]</text>
 
     <!-- 8 Gym Badges Pixel Icons -->
     <g transform="translate(16, 38)">
       <!-- Badge 1: Boulder -->
-      <polygon points="12,4 20,12 12,20 4,12" fill="#94a3b8" stroke="#475569" stroke-width="1.5" />
+      <polygon points="12,4 20,12 12,20 4,12" fill="#8FBF91" stroke="#245744" stroke-width="1.5" />
       <!-- Badge 2: Cascade -->
-      <circle cx="48" cy="12" r="8" fill="#52b788" stroke="#2d6a4f" stroke-width="1.5" />
+      <circle cx="48" cy="12" r="8" fill="#245744" stroke="#102A25" stroke-width="1.5" />
       <!-- Badge 3: Thunder -->
-      <polygon points="84,4 87,10 93,12 87,14 84,20 81,14 75,12 81,10" fill="#E9B949" stroke="#b45309" stroke-width="1.5" />
+      <polygon points="84,4 87,10 93,12 87,14 84,20 81,14 75,12 81,10" fill="#F4C95D" stroke="#173D32" stroke-width="1.5" />
       <!-- Badge 4: Rainbow -->
-      <rect x="114" y="6" width="12" height="12" rx="2" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5" />
+      <rect x="114" y="6" width="12" height="12" rx="2" fill="#8FBF91" stroke="#245744" stroke-width="1.5" />
     </g>
 
     <g transform="translate(16, 68)">
       <!-- Badge 5: Soul -->
-      <circle cx="12" cy="12" r="7" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5" />
+      <circle cx="12" cy="12" r="7" fill="#173D32" stroke="#245744" stroke-width="1.5" />
       <!-- Badge 6: Marsh -->
-      <polygon points="48,4 56,12 48,20 40,12" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+      <polygon points="48,4 56,12 48,20 40,12" fill="#F4C95D" stroke="#173D32" stroke-width="1.5" />
       <!-- Badge 7: Volcano -->
-      <polygon points="84,4 90,18 78,18" fill="#D95D39" stroke="#991b1b" stroke-width="1.5" />
+      <polygon points="84,4 90,18 78,18" fill="#D95757" stroke="#102A25" stroke-width="1.5" />
       <!-- Badge 8: Earth -->
-      <rect x="114" y="6" width="12" height="12" fill="#A7C957" stroke="#386641" stroke-width="1.5" />
+      <rect x="114" y="6" width="12" height="12" fill="#245744" stroke="#173D32" stroke-width="1.5" />
     </g>
 
     <!-- Divider Line -->
-    <line x1="12" y1="104" x2="163" y2="104" stroke="#588157" stroke-width="1" stroke-dasharray="4 2" />
+    <line x1="12" y1="104" x2="163" y2="104" stroke="#245744" stroke-width="1" stroke-dasharray="4 2" />
 
     <!-- Animated Poké Ball Centerpiece -->
     <g class="anim-ball" transform="translate(87, 140)">
-      <circle cx="0" cy="0" r="22" fill="#1b2e1e" stroke="#283618" stroke-width="1.5" />
-      <path d="M -22,0 A 22,22 0 0,0 22,0 Z" fill="#F5F1E8" />
-      <path d="M -22,0 A 22,22 0 0,1 22,0 Z" fill="#D95D39" />
-      <!-- Ultra Band Accents -->
-      <rect x="-14" y="-20" width="6" height="16" fill="#E9B949" />
-      <rect x="8" y="-20" width="6" height="16" fill="#E9B949" />
+      <circle cx="0" cy="0" r="22" fill="#102A25" stroke="#173D32" stroke-width="1.5" />
+      <path d="M -22,0 A 22,22 0 0,0 22,0 Z" fill="#F4E8C1" />
+      <path d="M -22,0 A 22,22 0 0,1 22,0 Z" fill="#D95757" />
+      <!-- Ultra Band Accents in Gold -->
+      <rect x="-14" y="-20" width="6" height="16" fill="#F4C95D" />
+      <rect x="8" y="-20" width="6" height="16" fill="#F4C95D" />
       <!-- Belt & Button -->
-      <line x1="-22" y1="0" x2="22" y2="0" stroke="#1b2e1e" stroke-width="3" />
-      <circle cx="0" cy="0" r="7" fill="#1b2e1e" />
-      <circle cx="0" cy="0" r="5" fill="#F5F1E8" />
-      <circle cx="0" cy="0" r="2.5" fill="#1b2e1e" />
+      <line x1="-22" y1="0" x2="22" y2="0" stroke="#102A25" stroke-width="3" />
+      <circle cx="0" cy="0" r="7" fill="#102A25" />
+      <circle cx="0" cy="0" r="5" fill="#F4E8C1" />
+      <circle cx="0" cy="0" r="2.5" fill="#102A25" />
     </g>
   </g>
 
   <!-- Outer GBA Border Highlights -->
-  <rect x="0" y="0" width="900" height="4" fill="#A7C957" />
-  <rect x="0" y="286" width="900" height="4" fill="#386641" />
-  <rect x="0" y="0" width="4" height="290" fill="#A7C957" />
-  <rect x="896" y="0" width="4" height="290" fill="#386641" />
+  <rect x="0" y="0" width="900" height="4" fill="#8FBF91" />
+  <rect x="0" y="286" width="900" height="4" fill="#173D32" />
+  <rect x="0" y="0" width="4" height="290" fill="#8FBF91" />
+  <rect x="896" y="0" width="4" height="290" fill="#173D32" />
 </svg>
