@@ -39,10 +39,10 @@
     <text class="pk-val" x="70" y="72">Vietnam Dev Community VN</text>
 
     <text class="pk-label" x="0" y="100">POKÉDEX:</text>
-    <text class="pk-val" x="90" y="100">TypeScript, NestJS, Next.js, Prisma, PostgreSQL</text>
+    <text class="pk-val" x="70" y="100">TypeScript, NestJS, Next.js, Prisma, PostgreSQL</text>
 
     <text class="pk-label" x="0" y="128">STATUS :</text>
-    <text class="pk-val" x="90" y="128">Open for Internship &amp; Fresher Roles 🚀</text>
+    <text class="pk-val" x="70" y="128">Open for Internship &amp; Fresher Roles 🚀</text>
 
     <g transform="translate(0, 150)">
       <rect x="0" y="0" width="440" height="42" rx="4" fill="#F8F4E3" stroke="#245744" stroke-width="1.5" />
